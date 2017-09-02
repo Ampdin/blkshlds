@@ -8,6 +8,7 @@ import { ArmoryTaskMySuffixModule } from './task/task-my-suffix.module';
 import { ArmoryEmployeeMySuffixModule } from './employee/employee-my-suffix.module';
 import { ArmoryJobMySuffixModule } from './job/job-my-suffix.module';
 import { ArmoryJobHistoryMySuffixModule } from './job-history/job-history-my-suffix.module';
+import { ArmoryProductModule } from './product/product.module';
 /* jhipster-needle-add-entity-module-import - JHipster will add entity modules imports here */
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ArmoryJobHistoryMySuffixModule } from './job-history/job-history-my-suf
         ArmoryEmployeeMySuffixModule,
         ArmoryJobMySuffixModule,
         ArmoryJobHistoryMySuffixModule,
+        ArmoryProductModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
     declarations: [],

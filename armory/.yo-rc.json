@@ -2,7 +2,8 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "com.spirovanni.blackshields",
-      "nativeLanguage": "en"
+      "nativeLanguage": "en",
+      "microservicePath": "../store"
     },
     "jhipsterVersion": "4.7.0",
     "baseName": "armory",
