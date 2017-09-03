@@ -9,7 +9,6 @@ import { ResponseWrapper, createRequestOption } from '../../shared';
 export class DepartmentMySuffixService {
 
     private resourceUrl = 'api/departments';
-    private resourceSearchUrl = 'api/_search/departments';
 
     constructor(private http: Http) { }
 
@@ -41,12 +40,6 @@ export class DepartmentMySuffixService {
 
     delete(id: number): Observable<Response> {
         return this.http.delete(`${this.resourceUrl}/${id}`);
-    }
-
-    search(req?: any): Observable<ResponseWrapper> {
-        const options = createRequestOption(req);
-        return this.http.get(this.resourceSearchUrl, options)
-            .map((res: any) => this.convertResponse(res));
     }
 
     private convertResponse(res: Response): ResponseWrapper {

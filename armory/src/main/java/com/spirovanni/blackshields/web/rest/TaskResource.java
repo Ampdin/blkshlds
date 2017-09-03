@@ -15,9 +15,6 @@ import java.net.URISyntaxException;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.StreamSupport;
-
-import static org.elasticsearch.index.query.QueryBuilders.*;
 
 /**
  * REST controller for managing Task.
@@ -117,19 +114,4 @@ public class TaskResource {
         taskService.delete(id);
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id.toString())).build();
     }
-
-    /**
-     * SEARCH  /_search/tasks?query=:query : search for the task corresponding
-     * to the query.
-     *
-     * @param query the query of the task search
-     * @return the result of the search
-     */
-    @GetMapping("/_search/tasks")
-    @Timed
-    public List<TaskDTO> searchTasks(@RequestParam String query) {
-        log.debug("REST request to search Tasks for query {}", query);
-        return taskService.search(query);
-    }
-
 }

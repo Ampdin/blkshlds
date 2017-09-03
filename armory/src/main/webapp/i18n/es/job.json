@@ -4,8 +4,7 @@
             "home": {
                 "title": "Jobs",
                 "createLabel": "Crear nuevo Job",
-                "createOrEditLabel": "Crear o editar Job",
-                "search": "Search for Job"
+                "createOrEditLabel": "Crear o editar Job"
             },
             "created": "Un nuevo Job ha sido creado con el identificador {{ param }}",
             "updated": "Un Job ha sido actualizado con el identificador {{ param }}",

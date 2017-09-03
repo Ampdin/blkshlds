@@ -39,8 +39,8 @@ describe('Product e2e test', () => {
         expect(productDialogPage.getNameInput()).toMatch('name');
         productDialogPage.setPriceInput('5');
         expect(productDialogPage.getPriceInput()).toMatch('5');
-        productDialogPage.setDecriptionInput('decription');
-        expect(productDialogPage.getDecriptionInput()).toMatch('decription');
+        productDialogPage.setDescriptionInput('description');
+        expect(productDialogPage.getDescriptionInput()).toMatch('description');
         productDialogPage.save();
         expect(productDialogPage.getSaveButton().isPresent()).toBeFalsy();
     }); 
@@ -69,7 +69,7 @@ export class ProductDialogPage {
     closeButton = element(by.css('button.close'));
     nameInput = element(by.css('input#field_name'));
     priceInput = element(by.css('input#field_price'));
-    decriptionInput = element(by.css('input#field_decription'));
+    descriptionInput = element(by.css('input#field_description'));
 
     getModalTitle() {
         return this.modalTitle.getAttribute('jhiTranslate');
@@ -91,12 +91,12 @@ export class ProductDialogPage {
         return this.priceInput.getAttribute('value');
     }
 
-    setDecriptionInput = function (decription) {
-        this.decriptionInput.sendKeys(decription);
+    setDescriptionInput = function (description) {
+        this.descriptionInput.sendKeys(description);
     }
 
-    getDecriptionInput = function () {
-        return this.decriptionInput.getAttribute('value');
+    getDescriptionInput = function () {
+        return this.descriptionInput.getAttribute('value');
     }
 
     save() {

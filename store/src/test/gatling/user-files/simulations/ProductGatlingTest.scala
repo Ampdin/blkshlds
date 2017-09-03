@@ -68,7 +68,7 @@ class ProductGatlingTest extends Simulation {
             .exec(http("Create new product")
             .post("/store/api/products")
             .headers(headers_http_authenticated)
-            .body(StringBody("""{"id":null, "name":"SAMPLE_TEXT", "price":"0", "decription":"SAMPLE_TEXT"}""")).asJSON
+            .body(StringBody("""{"id":null, "name":"SAMPLE_TEXT", "price":"0", "description":"SAMPLE_TEXT"}""")).asJSON
             .check(status.is(201))
             .check(headerRegex("Location", "(.*)").saveAs("new_product_url"))).exitHereIfFailed
             .pause(10)

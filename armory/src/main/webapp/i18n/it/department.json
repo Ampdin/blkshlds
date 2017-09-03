@@ -4,8 +4,7 @@
             "home": {
                 "title": "Departments",
                 "createLabel": "Genera un nuovo Department",
-                "createOrEditLabel": "Genera o modifica un Department",
-                "search": "Cerca Department"
+                "createOrEditLabel": "Genera o modifica un Department"
             },
             "created": "&Egrave; stato generato un nuovo Department con identificatore {{ param }}",
             "updated": "&Egrave; stato aggiornato Department identificato da {{ param }}",

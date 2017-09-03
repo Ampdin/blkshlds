@@ -5,7 +5,6 @@ import com.spirovanni.blackshields.ArmoryApp;
 import com.spirovanni.blackshields.domain.JobHistory;
 import com.spirovanni.blackshields.repository.JobHistoryRepository;
 import com.spirovanni.blackshields.service.JobHistoryService;
-import com.spirovanni.blackshields.repository.search.JobHistorySearchRepository;
 import com.spirovanni.blackshields.service.dto.JobHistoryDTO;
 import com.spirovanni.blackshields.service.mapper.JobHistoryMapper;
 import com.spirovanni.blackshields.web.rest.errors.ExceptionTranslator;
@@ -66,9 +65,6 @@ public class JobHistoryResourceIntTest {
     private JobHistoryService jobHistoryService;
 
     @Autowired
-    private JobHistorySearchRepository jobHistorySearchRepository;
-
-    @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
@@ -110,7 +106,6 @@ public class JobHistoryResourceIntTest {
 
     @Before
     public void initTest() {
-        jobHistorySearchRepository.deleteAll();
         jobHistory = createEntity(em);
     }
 
@@ -133,10 +128,6 @@ public class JobHistoryResourceIntTest {
         assertThat(testJobHistory.getStartDate()).isEqualTo(DEFAULT_START_DATE);
         assertThat(testJobHistory.getEndDate()).isEqualTo(DEFAULT_END_DATE);
         assertThat(testJobHistory.getLanguage()).isEqualTo(DEFAULT_LANGUAGE);
-
-        // Validate the JobHistory in Elasticsearch
-        JobHistory jobHistoryEs = jobHistorySearchRepository.findOne(testJobHistory.getId());
-        assertThat(jobHistoryEs).isEqualToComparingFieldByField(testJobHistory);
     }
 
     @Test
@@ -204,7 +195,6 @@ public class JobHistoryResourceIntTest {
     public void updateJobHistory() throws Exception {
         // Initialize the database
         jobHistoryRepository.saveAndFlush(jobHistory);
-        jobHistorySearchRepository.save(jobHistory);
         int databaseSizeBeforeUpdate = jobHistoryRepository.findAll().size();
 
         // Update the jobHistory
@@ -227,10 +217,6 @@ public class JobHistoryResourceIntTest {
         assertThat(testJobHistory.getStartDate()).isEqualTo(UPDATED_START_DATE);
         assertThat(testJobHistory.getEndDate()).isEqualTo(UPDATED_END_DATE);
         assertThat(testJobHistory.getLanguage()).isEqualTo(UPDATED_LANGUAGE);
-
-        // Validate the JobHistory in Elasticsearch
-        JobHistory jobHistoryEs = jobHistorySearchRepository.findOne(testJobHistory.getId());
-        assertThat(jobHistoryEs).isEqualToComparingFieldByField(testJobHistory);
     }
 
     @Test
@@ -257,7 +243,6 @@ public class JobHistoryResourceIntTest {
     public void deleteJobHistory() throws Exception {
         // Initialize the database
         jobHistoryRepository.saveAndFlush(jobHistory);
-        jobHistorySearchRepository.save(jobHistory);
         int databaseSizeBeforeDelete = jobHistoryRepository.findAll().size();
 
         // Get the jobHistory
@@ -265,30 +250,9 @@ public class JobHistoryResourceIntTest {
             .accept(TestUtil.APPLICATION_JSON_UTF8))
             .andExpect(status().isOk());
 
-        // Validate Elasticsearch is empty
-        boolean jobHistoryExistsInEs = jobHistorySearchRepository.exists(jobHistory.getId());
-        assertThat(jobHistoryExistsInEs).isFalse();
-
         // Validate the database is empty
         List<JobHistory> jobHistoryList = jobHistoryRepository.findAll();
         assertThat(jobHistoryList).hasSize(databaseSizeBeforeDelete - 1);
-    }
-
-    @Test
-    @Transactional
-    public void searchJobHistory() throws Exception {
-        // Initialize the database
-        jobHistoryRepository.saveAndFlush(jobHistory);
-        jobHistorySearchRepository.save(jobHistory);
-
-        // Search the jobHistory
-        restJobHistoryMockMvc.perform(get("/api/_search/job-histories?query=id:" + jobHistory.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
-            .andExpect(jsonPath("$.[*].id").value(hasItem(jobHistory.getId().intValue())))
-            .andExpect(jsonPath("$.[*].startDate").value(hasItem(sameInstant(DEFAULT_START_DATE))))
-            .andExpect(jsonPath("$.[*].endDate").value(hasItem(sameInstant(DEFAULT_END_DATE))))
-            .andExpect(jsonPath("$.[*].language").value(hasItem(DEFAULT_LANGUAGE.toString())));
     }
 
     @Test

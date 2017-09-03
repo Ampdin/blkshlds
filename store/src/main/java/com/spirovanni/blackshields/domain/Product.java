@@ -27,8 +27,8 @@ public class Product implements Serializable {
     private BigDecimal price;
 
     @NotNull
-    @Field("decription")
-    private String decription;
+    @Field("description")
+    private String description;
 
     // jhipster-needle-entity-add-field - Jhipster will add fields here, do not remove
     public String getId() {
@@ -65,17 +65,17 @@ public class Product implements Serializable {
         this.price = price;
     }
 
-    public String getDecription() {
-        return decription;
+    public String getDescription() {
+        return description;
     }
 
-    public Product decription(String decription) {
-        this.decription = decription;
+    public Product description(String description) {
+        this.description = description;
         return this;
     }
 
-    public void setDecription(String decription) {
-        this.decription = decription;
+    public void setDescription(String description) {
+        this.description = description;
     }
     // jhipster-needle-entity-add-getters-setters - Jhipster will add getters and setters here, do not remove
 
@@ -105,7 +105,7 @@ public class Product implements Serializable {
             "id=" + getId() +
             ", name='" + getName() + "'" +
             ", price='" + getPrice() + "'" +
-            ", decription='" + getDecription() + "'" +
+            ", description='" + getDescription() + "'" +
             "}";
     }
 }

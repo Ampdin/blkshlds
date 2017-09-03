@@ -5,7 +5,6 @@ import com.spirovanni.blackshields.ArmoryApp;
 import com.spirovanni.blackshields.domain.Country;
 import com.spirovanni.blackshields.repository.CountryRepository;
 import com.spirovanni.blackshields.service.CountryService;
-import com.spirovanni.blackshields.repository.search.CountrySearchRepository;
 import com.spirovanni.blackshields.service.dto.CountryDTO;
 import com.spirovanni.blackshields.service.mapper.CountryMapper;
 import com.spirovanni.blackshields.web.rest.errors.ExceptionTranslator;
@@ -54,9 +53,6 @@ public class CountryResourceIntTest {
     private CountryService countryService;
 
     @Autowired
-    private CountrySearchRepository countrySearchRepository;
-
-    @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
@@ -96,7 +92,6 @@ public class CountryResourceIntTest {
 
     @Before
     public void initTest() {
-        countrySearchRepository.deleteAll();
         country = createEntity(em);
     }
 
@@ -117,10 +112,6 @@ public class CountryResourceIntTest {
         assertThat(countryList).hasSize(databaseSizeBeforeCreate + 1);
         Country testCountry = countryList.get(countryList.size() - 1);
         assertThat(testCountry.getCountryName()).isEqualTo(DEFAULT_COUNTRY_NAME);
-
-        // Validate the Country in Elasticsearch
-        Country countryEs = countrySearchRepository.findOne(testCountry.getId());
-        assertThat(countryEs).isEqualToComparingFieldByField(testCountry);
     }
 
     @Test
@@ -184,7 +175,6 @@ public class CountryResourceIntTest {
     public void updateCountry() throws Exception {
         // Initialize the database
         countryRepository.saveAndFlush(country);
-        countrySearchRepository.save(country);
         int databaseSizeBeforeUpdate = countryRepository.findAll().size();
 
         // Update the country
@@ -203,10 +193,6 @@ public class CountryResourceIntTest {
         assertThat(countryList).hasSize(databaseSizeBeforeUpdate);
         Country testCountry = countryList.get(countryList.size() - 1);
         assertThat(testCountry.getCountryName()).isEqualTo(UPDATED_COUNTRY_NAME);
-
-        // Validate the Country in Elasticsearch
-        Country countryEs = countrySearchRepository.findOne(testCountry.getId());
-        assertThat(countryEs).isEqualToComparingFieldByField(testCountry);
     }
 
     @Test
@@ -233,7 +219,6 @@ public class CountryResourceIntTest {
     public void deleteCountry() throws Exception {
         // Initialize the database
         countryRepository.saveAndFlush(country);
-        countrySearchRepository.save(country);
         int databaseSizeBeforeDelete = countryRepository.findAll().size();
 
         // Get the country
@@ -241,28 +226,9 @@ public class CountryResourceIntTest {
             .accept(TestUtil.APPLICATION_JSON_UTF8))
             .andExpect(status().isOk());
 
-        // Validate Elasticsearch is empty
-        boolean countryExistsInEs = countrySearchRepository.exists(country.getId());
-        assertThat(countryExistsInEs).isFalse();
-
         // Validate the database is empty
         List<Country> countryList = countryRepository.findAll();
         assertThat(countryList).hasSize(databaseSizeBeforeDelete - 1);
-    }
-
-    @Test
-    @Transactional
-    public void searchCountry() throws Exception {
-        // Initialize the database
-        countryRepository.saveAndFlush(country);
-        countrySearchRepository.save(country);
-
-        // Search the country
-        restCountryMockMvc.perform(get("/api/_search/countries?query=id:" + country.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
-            .andExpect(jsonPath("$.[*].id").value(hasItem(country.getId().intValue())))
-            .andExpect(jsonPath("$.[*].countryName").value(hasItem(DEFAULT_COUNTRY_NAME.toString())));
     }
 
     @Test

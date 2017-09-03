@@ -21,9 +21,6 @@ import java.net.URISyntaxException;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.StreamSupport;
-
-import static org.elasticsearch.index.query.QueryBuilders.*;
 
 /**
  * REST controller for managing JobHistory.
@@ -126,22 +123,4 @@ public class JobHistoryResource {
         jobHistoryService.delete(id);
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id.toString())).build();
     }
-
-    /**
-     * SEARCH  /_search/job-histories?query=:query : search for the jobHistory corresponding
-     * to the query.
-     *
-     * @param query the query of the jobHistory search
-     * @param pageable the pagination information
-     * @return the result of the search
-     */
-    @GetMapping("/_search/job-histories")
-    @Timed
-    public ResponseEntity<List<JobHistoryDTO>> searchJobHistories(@RequestParam String query, @ApiParam Pageable pageable) {
-        log.debug("REST request to search for a page of JobHistories for query {}", query);
-        Page<JobHistoryDTO> page = jobHistoryService.search(query, pageable);
-        HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/job-histories");
-        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
-    }
-
 }

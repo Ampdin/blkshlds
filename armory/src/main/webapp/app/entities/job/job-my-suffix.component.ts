@@ -19,7 +19,6 @@ currentAccount: any;
     error: any;
     success: any;
     eventSubscriber: Subscription;
-    currentSearch: string;
     routeData: any;
     links: any;
     totalItems: any;
@@ -48,21 +47,9 @@ currentAccount: any;
             this.reverse = data['pagingParams'].ascending;
             this.predicate = data['pagingParams'].predicate;
         });
-        this.currentSearch = activatedRoute.snapshot.params['search'] ? activatedRoute.snapshot.params['search'] : '';
     }
 
     loadAll() {
-        if (this.currentSearch) {
-            this.jobService.search({
-                page: this.page - 1,
-                query: this.currentSearch,
-                size: this.itemsPerPage,
-                sort: this.sort()}).subscribe(
-                    (res: ResponseWrapper) => this.onSuccess(res.json, res.headers),
-                    (res: ResponseWrapper) => this.onError(res.json)
-                );
-            return;
-        }
         this.jobService.query({
             page: this.page - 1,
             size: this.itemsPerPage,
@@ -82,7 +69,6 @@ currentAccount: any;
             {
                 page: this.page,
                 size: this.itemsPerPage,
-                search: this.currentSearch,
                 sort: this.predicate + ',' + (this.reverse ? 'asc' : 'desc')
             }
         });
@@ -91,21 +77,7 @@ currentAccount: any;
 
     clear() {
         this.page = 0;
-        this.currentSearch = '';
         this.router.navigate(['/job-my-suffix', {
-            page: this.page,
-            sort: this.predicate + ',' + (this.reverse ? 'asc' : 'desc')
-        }]);
-        this.loadAll();
-    }
-    search(query) {
-        if (!query) {
-            return this.clear();
-        }
-        this.page = 0;
-        this.currentSearch = query;
-        this.router.navigate(['/job-my-suffix', {
-            search: this.currentSearch,
             page: this.page,
             sort: this.predicate + ',' + (this.reverse ? 'asc' : 'desc')
         }]);

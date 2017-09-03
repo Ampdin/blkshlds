@@ -28,7 +28,7 @@
             "fieldType": "String"
         }
     ],
-    "changelogDate": "20170902052335",
+    "changelogDate": "20170903023144",
     "javadoc": "not an ignored comment",
     "entityTableName": "location",
     "dto": "mapstruct",

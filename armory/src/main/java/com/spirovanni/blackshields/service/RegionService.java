@@ -37,13 +37,4 @@ public interface RegionService {
      *  @param id the id of the entity
      */
     void delete(Long id);
-
-    /**
-     * Search for the region corresponding to the query.
-     *
-     *  @param query the query of the search
-     *  
-     *  @return the list of entities
-     */
-    List<RegionDTO> search(String query);
 }

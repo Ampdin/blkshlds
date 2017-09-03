@@ -24,14 +24,12 @@ export class JobHistoryMySuffixComponent implements OnInit, OnDestroy {
     queryCount: any;
     reverse: any;
     totalItems: number;
-    currentSearch: string;
 
     constructor(
         private jobHistoryService: JobHistoryMySuffixService,
         private alertService: JhiAlertService,
         private eventManager: JhiEventManager,
         private parseLinks: JhiParseLinks,
-        private activatedRoute: ActivatedRoute,
         private principal: Principal
     ) {
         this.jobHistories = [];
@@ -42,22 +40,9 @@ export class JobHistoryMySuffixComponent implements OnInit, OnDestroy {
         };
         this.predicate = 'id';
         this.reverse = true;
-        this.currentSearch = activatedRoute.snapshot.params['search'] ? activatedRoute.snapshot.params['search'] : '';
     }
 
     loadAll() {
-        if (this.currentSearch) {
-            this.jobHistoryService.search({
-                query: this.currentSearch,
-                page: this.page,
-                size: this.itemsPerPage,
-                sort: this.sort()
-            }).subscribe(
-                (res: ResponseWrapper) => this.onSuccess(res.json, res.headers),
-                (res: ResponseWrapper) => this.onError(res.json)
-            );
-            return;
-        }
         this.jobHistoryService.query({
             page: this.page,
             size: this.itemsPerPage,
@@ -76,33 +61,6 @@ export class JobHistoryMySuffixComponent implements OnInit, OnDestroy {
 
     loadPage(page) {
         this.page = page;
-        this.loadAll();
-    }
-
-    clear() {
-        this.jobHistories = [];
-        this.links = {
-            last: 0
-        };
-        this.page = 0;
-        this.predicate = 'id';
-        this.reverse = true;
-        this.currentSearch = '';
-        this.loadAll();
-    }
-
-    search(query) {
-        if (!query) {
-            return this.clear();
-        }
-        this.jobHistories = [];
-        this.links = {
-            last: 0
-        };
-        this.page = 0;
-        this.predicate = '_score';
-        this.reverse = false;
-        this.currentSearch = query;
         this.loadAll();
     }
     ngOnInit() {

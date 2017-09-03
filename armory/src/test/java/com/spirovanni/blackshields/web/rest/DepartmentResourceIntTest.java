@@ -5,7 +5,6 @@ import com.spirovanni.blackshields.ArmoryApp;
 import com.spirovanni.blackshields.domain.Department;
 import com.spirovanni.blackshields.repository.DepartmentRepository;
 import com.spirovanni.blackshields.service.DepartmentService;
-import com.spirovanni.blackshields.repository.search.DepartmentSearchRepository;
 import com.spirovanni.blackshields.service.dto.DepartmentDTO;
 import com.spirovanni.blackshields.service.mapper.DepartmentMapper;
 import com.spirovanni.blackshields.web.rest.errors.ExceptionTranslator;
@@ -54,9 +53,6 @@ public class DepartmentResourceIntTest {
     private DepartmentService departmentService;
 
     @Autowired
-    private DepartmentSearchRepository departmentSearchRepository;
-
-    @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
@@ -96,7 +92,6 @@ public class DepartmentResourceIntTest {
 
     @Before
     public void initTest() {
-        departmentSearchRepository.deleteAll();
         department = createEntity(em);
     }
 
@@ -117,10 +112,6 @@ public class DepartmentResourceIntTest {
         assertThat(departmentList).hasSize(databaseSizeBeforeCreate + 1);
         Department testDepartment = departmentList.get(departmentList.size() - 1);
         assertThat(testDepartment.getDepartmentName()).isEqualTo(DEFAULT_DEPARTMENT_NAME);
-
-        // Validate the Department in Elasticsearch
-        Department departmentEs = departmentSearchRepository.findOne(testDepartment.getId());
-        assertThat(departmentEs).isEqualToComparingFieldByField(testDepartment);
     }
 
     @Test
@@ -203,7 +194,6 @@ public class DepartmentResourceIntTest {
     public void updateDepartment() throws Exception {
         // Initialize the database
         departmentRepository.saveAndFlush(department);
-        departmentSearchRepository.save(department);
         int databaseSizeBeforeUpdate = departmentRepository.findAll().size();
 
         // Update the department
@@ -222,10 +212,6 @@ public class DepartmentResourceIntTest {
         assertThat(departmentList).hasSize(databaseSizeBeforeUpdate);
         Department testDepartment = departmentList.get(departmentList.size() - 1);
         assertThat(testDepartment.getDepartmentName()).isEqualTo(UPDATED_DEPARTMENT_NAME);
-
-        // Validate the Department in Elasticsearch
-        Department departmentEs = departmentSearchRepository.findOne(testDepartment.getId());
-        assertThat(departmentEs).isEqualToComparingFieldByField(testDepartment);
     }
 
     @Test
@@ -252,7 +238,6 @@ public class DepartmentResourceIntTest {
     public void deleteDepartment() throws Exception {
         // Initialize the database
         departmentRepository.saveAndFlush(department);
-        departmentSearchRepository.save(department);
         int databaseSizeBeforeDelete = departmentRepository.findAll().size();
 
         // Get the department
@@ -260,28 +245,9 @@ public class DepartmentResourceIntTest {
             .accept(TestUtil.APPLICATION_JSON_UTF8))
             .andExpect(status().isOk());
 
-        // Validate Elasticsearch is empty
-        boolean departmentExistsInEs = departmentSearchRepository.exists(department.getId());
-        assertThat(departmentExistsInEs).isFalse();
-
         // Validate the database is empty
         List<Department> departmentList = departmentRepository.findAll();
         assertThat(departmentList).hasSize(databaseSizeBeforeDelete - 1);
-    }
-
-    @Test
-    @Transactional
-    public void searchDepartment() throws Exception {
-        // Initialize the database
-        departmentRepository.saveAndFlush(department);
-        departmentSearchRepository.save(department);
-
-        // Search the department
-        restDepartmentMockMvc.perform(get("/api/_search/departments?query=id:" + department.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
-            .andExpect(jsonPath("$.[*].id").value(hasItem(department.getId().intValue())))
-            .andExpect(jsonPath("$.[*].departmentName").value(hasItem(DEFAULT_DEPARTMENT_NAME.toString())));
     }
 
     @Test

@@ -2,7 +2,6 @@ package com.spirovanni.blackshields.domain;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
-import org.springframework.data.elasticsearch.annotations.Document;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -16,7 +15,6 @@ import java.util.Objects;
 @Entity
 @Table(name = "job")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-@Document(indexName = "job")
 public class Job implements Serializable {
 
     private static final long serialVersionUID = 1L;

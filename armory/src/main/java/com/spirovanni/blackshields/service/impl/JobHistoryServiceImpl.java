@@ -3,7 +3,6 @@ package com.spirovanni.blackshields.service.impl;
 import com.spirovanni.blackshields.service.JobHistoryService;
 import com.spirovanni.blackshields.domain.JobHistory;
 import com.spirovanni.blackshields.repository.JobHistoryRepository;
-import com.spirovanni.blackshields.repository.search.JobHistorySearchRepository;
 import com.spirovanni.blackshields.service.dto.JobHistoryDTO;
 import com.spirovanni.blackshields.service.mapper.JobHistoryMapper;
 import org.slf4j.Logger;
@@ -13,8 +12,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
-import static org.elasticsearch.index.query.QueryBuilders.*;
 
 /**
  * Service Implementation for managing JobHistory.
@@ -28,12 +25,9 @@ public class JobHistoryServiceImpl implements JobHistoryService{
     private final JobHistoryRepository jobHistoryRepository;
 
     private final JobHistoryMapper jobHistoryMapper;
-
-    private final JobHistorySearchRepository jobHistorySearchRepository;
-    public JobHistoryServiceImpl(JobHistoryRepository jobHistoryRepository, JobHistoryMapper jobHistoryMapper, JobHistorySearchRepository jobHistorySearchRepository) {
+    public JobHistoryServiceImpl(JobHistoryRepository jobHistoryRepository, JobHistoryMapper jobHistoryMapper) {
         this.jobHistoryRepository = jobHistoryRepository;
         this.jobHistoryMapper = jobHistoryMapper;
-        this.jobHistorySearchRepository = jobHistorySearchRepository;
     }
 
     /**
@@ -47,9 +41,7 @@ public class JobHistoryServiceImpl implements JobHistoryService{
         log.debug("Request to save JobHistory : {}", jobHistoryDTO);
         JobHistory jobHistory = jobHistoryMapper.toEntity(jobHistoryDTO);
         jobHistory = jobHistoryRepository.save(jobHistory);
-        JobHistoryDTO result = jobHistoryMapper.toDto(jobHistory);
-        jobHistorySearchRepository.save(jobHistory);
-        return result;
+        return jobHistoryMapper.toDto(jobHistory);
     }
 
     /**
@@ -89,21 +81,5 @@ public class JobHistoryServiceImpl implements JobHistoryService{
     public void delete(Long id) {
         log.debug("Request to delete JobHistory : {}", id);
         jobHistoryRepository.delete(id);
-        jobHistorySearchRepository.delete(id);
-    }
-
-    /**
-     * Search for the jobHistory corresponding to the query.
-     *
-     *  @param query the query of the search
-     *  @param pageable the pagination information
-     *  @return the list of entities
-     */
-    @Override
-    @Transactional(readOnly = true)
-    public Page<JobHistoryDTO> search(String query, Pageable pageable) {
-        log.debug("Request to search for a page of JobHistories for query {}", query);
-        Page<JobHistory> result = jobHistorySearchRepository.search(queryStringQuery(query), pageable);
-        return result.map(jobHistoryMapper::toDto);
     }
 }

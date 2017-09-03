@@ -4,8 +4,7 @@
             "home": {
                 "title": "Locations",
                 "createLabel": "Genera un nuovo Location",
-                "createOrEditLabel": "Genera o modifica un Location",
-                "search": "Cerca Location"
+                "createOrEditLabel": "Genera o modifica un Location"
             },
             "created": "&Egrave; stato generato un nuovo Location con identificatore {{ param }}",
             "updated": "&Egrave; stato aggiornato Location identificato da {{ param }}",

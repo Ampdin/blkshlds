@@ -3,26 +3,13 @@
         <span jhiTranslate="armoryApp.region.home.title">Regions</span>
         <button class="btn btn-primary float-right jh-create-entity create-region-my-suffix" [routerLink]="['/', { outlets: { popup: ['region-my-suffix-new'] } }]">
             <span class="fa fa-plus"></span>
-            <span class="hidden-sm-down"  jhiTranslate="armoryApp.region.home.createLabel">
+            <span  jhiTranslate="armoryApp.region.home.createLabel">
             Create new Region
             </span>
         </button>
     </h2>
     <jhi-alert></jhi-alert>
     <div class="row">
-        <div class="col-sm-12">
-            <form name="searchForm" class="form-inline">
-                <div class="input-group w-100 mt-3">
-                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'armoryApp.region.home.search' | translate }}">
-                    <button class="input-group-addon btn btn-info" (click)="search(currentSearch)">
-                        <span class="fa fa-search"></span>
-                    </button>
-                    <button class="input-group-addon btn btn-danger" (click)="clear()" *ngIf="currentSearch">
-                        <span class="fa fa-trash-o"></span>
-                    </button>
-                </div>
-            </form>
-        </div>
     </div>
     <br/>
     <div class="table-responsive" *ngIf="regions">

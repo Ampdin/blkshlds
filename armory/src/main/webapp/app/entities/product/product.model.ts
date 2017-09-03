@@ -5,7 +5,7 @@ export class Product implements BaseEntity {
         public id?: number,
         public name?: string,
         public price?: number,
-        public decription?: string,
+        public description?: string,
     ) {
     }
 }

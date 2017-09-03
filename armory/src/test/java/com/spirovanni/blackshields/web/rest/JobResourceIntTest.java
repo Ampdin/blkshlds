@@ -4,7 +4,6 @@ import com.spirovanni.blackshields.ArmoryApp;
 
 import com.spirovanni.blackshields.domain.Job;
 import com.spirovanni.blackshields.repository.JobRepository;
-import com.spirovanni.blackshields.repository.search.JobSearchRepository;
 import com.spirovanni.blackshields.service.dto.JobDTO;
 import com.spirovanni.blackshields.service.mapper.JobMapper;
 import com.spirovanni.blackshields.web.rest.errors.ExceptionTranslator;
@@ -62,9 +61,6 @@ public class JobResourceIntTest {
     private JobMapper jobMapper;
 
     @Autowired
-    private JobSearchRepository jobSearchRepository;
-
-    @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
@@ -83,7 +79,7 @@ public class JobResourceIntTest {
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        final JobResource jobResource = new JobResource(jobRepository, jobMapper, jobSearchRepository);
+        final JobResource jobResource = new JobResource(jobRepository, jobMapper);
         this.restJobMockMvc = MockMvcBuilders.standaloneSetup(jobResource)
             .setCustomArgumentResolvers(pageableArgumentResolver)
             .setControllerAdvice(exceptionTranslator)
@@ -108,7 +104,6 @@ public class JobResourceIntTest {
 
     @Before
     public void initTest() {
-        jobSearchRepository.deleteAll();
         job = createEntity(em);
     }
 
@@ -133,10 +128,6 @@ public class JobResourceIntTest {
         assertThat(testJob.getJobDescription()).isEqualTo(DEFAULT_JOB_DESCRIPTION);
         assertThat(testJob.getMinSalary()).isEqualTo(DEFAULT_MIN_SALARY);
         assertThat(testJob.getMaxSalary()).isEqualTo(DEFAULT_MAX_SALARY);
-
-        // Validate the Job in Elasticsearch
-        Job jobEs = jobSearchRepository.findOne(testJob.getId());
-        assertThat(jobEs).isEqualToComparingFieldByField(testJob);
     }
 
     @Test
@@ -208,7 +199,6 @@ public class JobResourceIntTest {
     public void updateJob() throws Exception {
         // Initialize the database
         jobRepository.saveAndFlush(job);
-        jobSearchRepository.save(job);
         int databaseSizeBeforeUpdate = jobRepository.findAll().size();
 
         // Update the job
@@ -235,10 +225,6 @@ public class JobResourceIntTest {
         assertThat(testJob.getJobDescription()).isEqualTo(UPDATED_JOB_DESCRIPTION);
         assertThat(testJob.getMinSalary()).isEqualTo(UPDATED_MIN_SALARY);
         assertThat(testJob.getMaxSalary()).isEqualTo(UPDATED_MAX_SALARY);
-
-        // Validate the Job in Elasticsearch
-        Job jobEs = jobSearchRepository.findOne(testJob.getId());
-        assertThat(jobEs).isEqualToComparingFieldByField(testJob);
     }
 
     @Test
@@ -265,7 +251,6 @@ public class JobResourceIntTest {
     public void deleteJob() throws Exception {
         // Initialize the database
         jobRepository.saveAndFlush(job);
-        jobSearchRepository.save(job);
         int databaseSizeBeforeDelete = jobRepository.findAll().size();
 
         // Get the job
@@ -273,32 +258,9 @@ public class JobResourceIntTest {
             .accept(TestUtil.APPLICATION_JSON_UTF8))
             .andExpect(status().isOk());
 
-        // Validate Elasticsearch is empty
-        boolean jobExistsInEs = jobSearchRepository.exists(job.getId());
-        assertThat(jobExistsInEs).isFalse();
-
         // Validate the database is empty
         List<Job> jobList = jobRepository.findAll();
         assertThat(jobList).hasSize(databaseSizeBeforeDelete - 1);
-    }
-
-    @Test
-    @Transactional
-    public void searchJob() throws Exception {
-        // Initialize the database
-        jobRepository.saveAndFlush(job);
-        jobSearchRepository.save(job);
-
-        // Search the job
-        restJobMockMvc.perform(get("/api/_search/jobs?query=id:" + job.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
-            .andExpect(jsonPath("$.[*].id").value(hasItem(job.getId().intValue())))
-            .andExpect(jsonPath("$.[*].jobTitle").value(hasItem(DEFAULT_JOB_TITLE.toString())))
-            .andExpect(jsonPath("$.[*].onetCode").value(hasItem(DEFAULT_ONET_CODE.intValue())))
-            .andExpect(jsonPath("$.[*].jobDescription").value(hasItem(DEFAULT_JOB_DESCRIPTION.toString())))
-            .andExpect(jsonPath("$.[*].minSalary").value(hasItem(DEFAULT_MIN_SALARY.intValue())))
-            .andExpect(jsonPath("$.[*].maxSalary").value(hasItem(DEFAULT_MAX_SALARY.intValue())));
     }
 
     @Test

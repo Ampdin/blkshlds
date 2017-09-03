@@ -5,7 +5,6 @@ import com.spirovanni.blackshields.ArmoryApp;
 import com.spirovanni.blackshields.domain.Location;
 import com.spirovanni.blackshields.repository.LocationRepository;
 import com.spirovanni.blackshields.service.LocationService;
-import com.spirovanni.blackshields.repository.search.LocationSearchRepository;
 import com.spirovanni.blackshields.service.dto.LocationDTO;
 import com.spirovanni.blackshields.service.mapper.LocationMapper;
 import com.spirovanni.blackshields.web.rest.errors.ExceptionTranslator;
@@ -63,9 +62,6 @@ public class LocationResourceIntTest {
     private LocationService locationService;
 
     @Autowired
-    private LocationSearchRepository locationSearchRepository;
-
-    @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
@@ -108,7 +104,6 @@ public class LocationResourceIntTest {
 
     @Before
     public void initTest() {
-        locationSearchRepository.deleteAll();
         location = createEntity(em);
     }
 
@@ -132,10 +127,6 @@ public class LocationResourceIntTest {
         assertThat(testLocation.getPostalCode()).isEqualTo(DEFAULT_POSTAL_CODE);
         assertThat(testLocation.getCity()).isEqualTo(DEFAULT_CITY);
         assertThat(testLocation.getStateProvince()).isEqualTo(DEFAULT_STATE_PROVINCE);
-
-        // Validate the Location in Elasticsearch
-        Location locationEs = locationSearchRepository.findOne(testLocation.getId());
-        assertThat(locationEs).isEqualToComparingFieldByField(testLocation);
     }
 
     @Test
@@ -205,7 +196,6 @@ public class LocationResourceIntTest {
     public void updateLocation() throws Exception {
         // Initialize the database
         locationRepository.saveAndFlush(location);
-        locationSearchRepository.save(location);
         int databaseSizeBeforeUpdate = locationRepository.findAll().size();
 
         // Update the location
@@ -230,10 +220,6 @@ public class LocationResourceIntTest {
         assertThat(testLocation.getPostalCode()).isEqualTo(UPDATED_POSTAL_CODE);
         assertThat(testLocation.getCity()).isEqualTo(UPDATED_CITY);
         assertThat(testLocation.getStateProvince()).isEqualTo(UPDATED_STATE_PROVINCE);
-
-        // Validate the Location in Elasticsearch
-        Location locationEs = locationSearchRepository.findOne(testLocation.getId());
-        assertThat(locationEs).isEqualToComparingFieldByField(testLocation);
     }
 
     @Test
@@ -260,7 +246,6 @@ public class LocationResourceIntTest {
     public void deleteLocation() throws Exception {
         // Initialize the database
         locationRepository.saveAndFlush(location);
-        locationSearchRepository.save(location);
         int databaseSizeBeforeDelete = locationRepository.findAll().size();
 
         // Get the location
@@ -268,31 +253,9 @@ public class LocationResourceIntTest {
             .accept(TestUtil.APPLICATION_JSON_UTF8))
             .andExpect(status().isOk());
 
-        // Validate Elasticsearch is empty
-        boolean locationExistsInEs = locationSearchRepository.exists(location.getId());
-        assertThat(locationExistsInEs).isFalse();
-
         // Validate the database is empty
         List<Location> locationList = locationRepository.findAll();
         assertThat(locationList).hasSize(databaseSizeBeforeDelete - 1);
-    }
-
-    @Test
-    @Transactional
-    public void searchLocation() throws Exception {
-        // Initialize the database
-        locationRepository.saveAndFlush(location);
-        locationSearchRepository.save(location);
-
-        // Search the location
-        restLocationMockMvc.perform(get("/api/_search/locations?query=id:" + location.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
-            .andExpect(jsonPath("$.[*].id").value(hasItem(location.getId().intValue())))
-            .andExpect(jsonPath("$.[*].streetAddress").value(hasItem(DEFAULT_STREET_ADDRESS.toString())))
-            .andExpect(jsonPath("$.[*].postalCode").value(hasItem(DEFAULT_POSTAL_CODE.toString())))
-            .andExpect(jsonPath("$.[*].city").value(hasItem(DEFAULT_CITY.toString())))
-            .andExpect(jsonPath("$.[*].stateProvince").value(hasItem(DEFAULT_STATE_PROVINCE.toString())));
     }
 
     @Test

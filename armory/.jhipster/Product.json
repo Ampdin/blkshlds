@@ -17,7 +17,7 @@
             ]
         },
         {
-            "fieldName": "decription",
+            "fieldName": "description",
             "fieldType": "String",
             "fieldValidateRules": [
                 "required"

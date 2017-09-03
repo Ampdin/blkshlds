@@ -52,14 +52,6 @@ spring:
             hibernate.cache.hazelcast.instance_name: armory
             hibernate.cache.use_minimal_puts: true
             hibernate.cache.hazelcast.use_lite_member: true
-    data:
-        elasticsearch:
-            cluster-name:
-            cluster-nodes:
-            properties:
-                path:
-                    logs: target/elasticsearch/log
-                    data: target/elasticsearch/data
     mail:
         host: localhost
         port: 25

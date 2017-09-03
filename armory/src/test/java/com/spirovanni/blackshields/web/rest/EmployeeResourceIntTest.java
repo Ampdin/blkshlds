@@ -4,7 +4,6 @@ import com.spirovanni.blackshields.ArmoryApp;
 
 import com.spirovanni.blackshields.domain.Employee;
 import com.spirovanni.blackshields.repository.EmployeeRepository;
-import com.spirovanni.blackshields.repository.search.EmployeeSearchRepository;
 import com.spirovanni.blackshields.service.dto.EmployeeDTO;
 import com.spirovanni.blackshields.service.mapper.EmployeeMapper;
 import com.spirovanni.blackshields.web.rest.errors.ExceptionTranslator;
@@ -73,9 +72,6 @@ public class EmployeeResourceIntTest {
     private EmployeeMapper employeeMapper;
 
     @Autowired
-    private EmployeeSearchRepository employeeSearchRepository;
-
-    @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
@@ -94,7 +90,7 @@ public class EmployeeResourceIntTest {
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        final EmployeeResource employeeResource = new EmployeeResource(employeeRepository, employeeMapper, employeeSearchRepository);
+        final EmployeeResource employeeResource = new EmployeeResource(employeeRepository, employeeMapper);
         this.restEmployeeMockMvc = MockMvcBuilders.standaloneSetup(employeeResource)
             .setCustomArgumentResolvers(pageableArgumentResolver)
             .setControllerAdvice(exceptionTranslator)
@@ -121,7 +117,6 @@ public class EmployeeResourceIntTest {
 
     @Before
     public void initTest() {
-        employeeSearchRepository.deleteAll();
         employee = createEntity(em);
     }
 
@@ -148,10 +143,6 @@ public class EmployeeResourceIntTest {
         assertThat(testEmployee.getHireDate()).isEqualTo(DEFAULT_HIRE_DATE);
         assertThat(testEmployee.getSalary()).isEqualTo(DEFAULT_SALARY);
         assertThat(testEmployee.getCommissionPct()).isEqualTo(DEFAULT_COMMISSION_PCT);
-
-        // Validate the Employee in Elasticsearch
-        Employee employeeEs = employeeSearchRepository.findOne(testEmployee.getId());
-        assertThat(employeeEs).isEqualToComparingFieldByField(testEmployee);
     }
 
     @Test
@@ -227,7 +218,6 @@ public class EmployeeResourceIntTest {
     public void updateEmployee() throws Exception {
         // Initialize the database
         employeeRepository.saveAndFlush(employee);
-        employeeSearchRepository.save(employee);
         int databaseSizeBeforeUpdate = employeeRepository.findAll().size();
 
         // Update the employee
@@ -258,10 +248,6 @@ public class EmployeeResourceIntTest {
         assertThat(testEmployee.getHireDate()).isEqualTo(UPDATED_HIRE_DATE);
         assertThat(testEmployee.getSalary()).isEqualTo(UPDATED_SALARY);
         assertThat(testEmployee.getCommissionPct()).isEqualTo(UPDATED_COMMISSION_PCT);
-
-        // Validate the Employee in Elasticsearch
-        Employee employeeEs = employeeSearchRepository.findOne(testEmployee.getId());
-        assertThat(employeeEs).isEqualToComparingFieldByField(testEmployee);
     }
 
     @Test
@@ -288,7 +274,6 @@ public class EmployeeResourceIntTest {
     public void deleteEmployee() throws Exception {
         // Initialize the database
         employeeRepository.saveAndFlush(employee);
-        employeeSearchRepository.save(employee);
         int databaseSizeBeforeDelete = employeeRepository.findAll().size();
 
         // Get the employee
@@ -296,34 +281,9 @@ public class EmployeeResourceIntTest {
             .accept(TestUtil.APPLICATION_JSON_UTF8))
             .andExpect(status().isOk());
 
-        // Validate Elasticsearch is empty
-        boolean employeeExistsInEs = employeeSearchRepository.exists(employee.getId());
-        assertThat(employeeExistsInEs).isFalse();
-
         // Validate the database is empty
         List<Employee> employeeList = employeeRepository.findAll();
         assertThat(employeeList).hasSize(databaseSizeBeforeDelete - 1);
-    }
-
-    @Test
-    @Transactional
-    public void searchEmployee() throws Exception {
-        // Initialize the database
-        employeeRepository.saveAndFlush(employee);
-        employeeSearchRepository.save(employee);
-
-        // Search the employee
-        restEmployeeMockMvc.perform(get("/api/_search/employees?query=id:" + employee.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
-            .andExpect(jsonPath("$.[*].id").value(hasItem(employee.getId().intValue())))
-            .andExpect(jsonPath("$.[*].firstName").value(hasItem(DEFAULT_FIRST_NAME.toString())))
-            .andExpect(jsonPath("$.[*].lastName").value(hasItem(DEFAULT_LAST_NAME.toString())))
-            .andExpect(jsonPath("$.[*].email").value(hasItem(DEFAULT_EMAIL.toString())))
-            .andExpect(jsonPath("$.[*].phoneNumber").value(hasItem(DEFAULT_PHONE_NUMBER.toString())))
-            .andExpect(jsonPath("$.[*].hireDate").value(hasItem(sameInstant(DEFAULT_HIRE_DATE))))
-            .andExpect(jsonPath("$.[*].salary").value(hasItem(DEFAULT_SALARY.intValue())))
-            .andExpect(jsonPath("$.[*].commissionPct").value(hasItem(DEFAULT_COMMISSION_PCT.intValue())));
     }
 
     @Test

@@ -38,7 +38,7 @@
             "fieldType": "Long"
         }
     ],
-    "changelogDate": "20170902052339",
+    "changelogDate": "20170903023148",
     "entityTableName": "job",
     "dto": "mapstruct",
     "pagination": "pagination",

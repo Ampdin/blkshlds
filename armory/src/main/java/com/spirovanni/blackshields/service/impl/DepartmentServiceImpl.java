@@ -3,7 +3,6 @@ package com.spirovanni.blackshields.service.impl;
 import com.spirovanni.blackshields.service.DepartmentService;
 import com.spirovanni.blackshields.domain.Department;
 import com.spirovanni.blackshields.repository.DepartmentRepository;
-import com.spirovanni.blackshields.repository.search.DepartmentSearchRepository;
 import com.spirovanni.blackshields.service.dto.DepartmentDTO;
 import com.spirovanni.blackshields.service.mapper.DepartmentMapper;
 import org.slf4j.Logger;
@@ -14,9 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
-
-import static org.elasticsearch.index.query.QueryBuilders.*;
 
 /**
  * Service Implementation for managing Department.
@@ -30,12 +26,9 @@ public class DepartmentServiceImpl implements DepartmentService{
     private final DepartmentRepository departmentRepository;
 
     private final DepartmentMapper departmentMapper;
-
-    private final DepartmentSearchRepository departmentSearchRepository;
-    public DepartmentServiceImpl(DepartmentRepository departmentRepository, DepartmentMapper departmentMapper, DepartmentSearchRepository departmentSearchRepository) {
+    public DepartmentServiceImpl(DepartmentRepository departmentRepository, DepartmentMapper departmentMapper) {
         this.departmentRepository = departmentRepository;
         this.departmentMapper = departmentMapper;
-        this.departmentSearchRepository = departmentSearchRepository;
     }
 
     /**
@@ -49,9 +42,7 @@ public class DepartmentServiceImpl implements DepartmentService{
         log.debug("Request to save Department : {}", departmentDTO);
         Department department = departmentMapper.toEntity(departmentDTO);
         department = departmentRepository.save(department);
-        DepartmentDTO result = departmentMapper.toDto(department);
-        departmentSearchRepository.save(department);
-        return result;
+        return departmentMapper.toDto(department);
     }
 
     /**
@@ -91,22 +82,5 @@ public class DepartmentServiceImpl implements DepartmentService{
     public void delete(Long id) {
         log.debug("Request to delete Department : {}", id);
         departmentRepository.delete(id);
-        departmentSearchRepository.delete(id);
-    }
-
-    /**
-     * Search for the department corresponding to the query.
-     *
-     *  @param query the query of the search
-     *  @return the list of entities
-     */
-    @Override
-    @Transactional(readOnly = true)
-    public List<DepartmentDTO> search(String query) {
-        log.debug("Request to search Departments for query {}", query);
-        return StreamSupport
-            .stream(departmentSearchRepository.search(queryStringQuery(query)).spliterator(), false)
-            .map(departmentMapper::toDto)
-            .collect(Collectors.toList());
     }
 }

@@ -4,8 +4,7 @@
             "home": {
                 "title": "Departments",
                 "createLabel": "Create a new Department",
-                "createOrEditLabel": "Create or edit a Department",
-                "search": "Search for Department"
+                "createOrEditLabel": "Create or edit a Department"
             },
             "created": "A new Department is created with identifier {{ param }}",
             "updated": "A Department is updated with identifier {{ param }}",

@@ -5,7 +5,6 @@ import com.spirovanni.blackshields.ArmoryApp;
 import com.spirovanni.blackshields.domain.Task;
 import com.spirovanni.blackshields.repository.TaskRepository;
 import com.spirovanni.blackshields.service.TaskService;
-import com.spirovanni.blackshields.repository.search.TaskSearchRepository;
 import com.spirovanni.blackshields.service.dto.TaskDTO;
 import com.spirovanni.blackshields.service.mapper.TaskMapper;
 import com.spirovanni.blackshields.web.rest.errors.ExceptionTranslator;
@@ -102,9 +101,6 @@ public class TaskResourceIntTest {
     private TaskService taskService;
 
     @Autowired
-    private TaskSearchRepository taskSearchRepository;
-
-    @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
@@ -158,7 +154,6 @@ public class TaskResourceIntTest {
 
     @Before
     public void initTest() {
-        taskSearchRepository.deleteAll();
         task = createEntity(em);
     }
 
@@ -193,10 +188,6 @@ public class TaskResourceIntTest {
         assertThat(testTask.getDate()).isEqualTo(DEFAULT_DATE);
         assertThat(testTask.getDomainSource()).isEqualTo(DEFAULT_DOMAIN_SOURCE);
         assertThat(testTask.getDescription()).isEqualTo(DEFAULT_DESCRIPTION);
-
-        // Validate the Task in Elasticsearch
-        Task taskEs = taskSearchRepository.findOne(testTask.getId());
-        assertThat(taskEs).isEqualToComparingFieldByField(testTask);
     }
 
     @Test
@@ -288,7 +279,6 @@ public class TaskResourceIntTest {
     public void updateTask() throws Exception {
         // Initialize the database
         taskRepository.saveAndFlush(task);
-        taskSearchRepository.save(task);
         int databaseSizeBeforeUpdate = taskRepository.findAll().size();
 
         // Update the task
@@ -335,10 +325,6 @@ public class TaskResourceIntTest {
         assertThat(testTask.getDate()).isEqualTo(UPDATED_DATE);
         assertThat(testTask.getDomainSource()).isEqualTo(UPDATED_DOMAIN_SOURCE);
         assertThat(testTask.getDescription()).isEqualTo(UPDATED_DESCRIPTION);
-
-        // Validate the Task in Elasticsearch
-        Task taskEs = taskSearchRepository.findOne(testTask.getId());
-        assertThat(taskEs).isEqualToComparingFieldByField(testTask);
     }
 
     @Test
@@ -365,7 +351,6 @@ public class TaskResourceIntTest {
     public void deleteTask() throws Exception {
         // Initialize the database
         taskRepository.saveAndFlush(task);
-        taskSearchRepository.save(task);
         int databaseSizeBeforeDelete = taskRepository.findAll().size();
 
         // Get the task
@@ -373,42 +358,9 @@ public class TaskResourceIntTest {
             .accept(TestUtil.APPLICATION_JSON_UTF8))
             .andExpect(status().isOk());
 
-        // Validate Elasticsearch is empty
-        boolean taskExistsInEs = taskSearchRepository.exists(task.getId());
-        assertThat(taskExistsInEs).isFalse();
-
         // Validate the database is empty
         List<Task> taskList = taskRepository.findAll();
         assertThat(taskList).hasSize(databaseSizeBeforeDelete - 1);
-    }
-
-    @Test
-    @Transactional
-    public void searchTask() throws Exception {
-        // Initialize the database
-        taskRepository.saveAndFlush(task);
-        taskSearchRepository.save(task);
-
-        // Search the task
-        restTaskMockMvc.perform(get("/api/_search/tasks?query=id:" + task.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
-            .andExpect(jsonPath("$.[*].id").value(hasItem(task.getId().intValue())))
-            .andExpect(jsonPath("$.[*].title").value(hasItem(DEFAULT_TITLE.toString())))
-            .andExpect(jsonPath("$.[*].elementID").value(hasItem(DEFAULT_ELEMENT_ID.toString())))
-            .andExpect(jsonPath("$.[*].elementName").value(hasItem(DEFAULT_ELEMENT_NAME.toString())))
-            .andExpect(jsonPath("$.[*].scaleID").value(hasItem(DEFAULT_SCALE_ID.toString())))
-            .andExpect(jsonPath("$.[*].scaleName").value(hasItem(DEFAULT_SCALE_NAME.toString())))
-            .andExpect(jsonPath("$.[*].dataValue").value(hasItem(DEFAULT_DATA_VALUE.intValue())))
-            .andExpect(jsonPath("$.[*].n").value(hasItem(DEFAULT_N.intValue())))
-            .andExpect(jsonPath("$.[*].standardError").value(hasItem(DEFAULT_STANDARD_ERROR.intValue())))
-            .andExpect(jsonPath("$.[*].lowerClBound").value(hasItem(DEFAULT_LOWER_CL_BOUND.intValue())))
-            .andExpect(jsonPath("$.[*].upperClBound").value(hasItem(DEFAULT_UPPER_CL_BOUND.intValue())))
-            .andExpect(jsonPath("$.[*].recommendSuppress").value(hasItem(DEFAULT_RECOMMEND_SUPPRESS.toString())))
-            .andExpect(jsonPath("$.[*].notRelevant").value(hasItem(DEFAULT_NOT_RELEVANT.toString())))
-            .andExpect(jsonPath("$.[*].date").value(hasItem(sameInstant(DEFAULT_DATE))))
-            .andExpect(jsonPath("$.[*].domainSource").value(hasItem(DEFAULT_DOMAIN_SOURCE.toString())))
-            .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION.toString())));
     }
 
     @Test

@@ -4,8 +4,7 @@
             "home": {
                 "title": "Tasks",
                 "createLabel": "Crear nuevo Task",
-                "createOrEditLabel": "Crear o editar Task",
-                "search": "Search for Task"
+                "createOrEditLabel": "Crear o editar Task"
             },
             "created": "Un nuevo Task ha sido creado con el identificador {{ param }}",
             "updated": "Un Task ha sido actualizado con el identificador {{ param }}",

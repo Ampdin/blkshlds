@@ -37,13 +37,4 @@ public interface TaskService {
      *  @param id the id of the entity
      */
     void delete(Long id);
-
-    /**
-     * Search for the task corresponding to the query.
-     *
-     *  @param query the query of the search
-     *  
-     *  @return the list of entities
-     */
-    List<TaskDTO> search(String query);
 }

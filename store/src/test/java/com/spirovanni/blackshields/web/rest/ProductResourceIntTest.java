@@ -42,8 +42,8 @@ public class ProductResourceIntTest {
     private static final BigDecimal DEFAULT_PRICE = new BigDecimal(1);
     private static final BigDecimal UPDATED_PRICE = new BigDecimal(2);
 
-    private static final String DEFAULT_DECRIPTION = "AAAAAAAAAA";
-    private static final String UPDATED_DECRIPTION = "BBBBBBBBBB";
+    private static final String DEFAULT_DESCRIPTION = "AAAAAAAAAA";
+    private static final String UPDATED_DESCRIPTION = "BBBBBBBBBB";
 
     @Autowired
     private ProductRepository productRepository;
@@ -81,7 +81,7 @@ public class ProductResourceIntTest {
         Product product = new Product()
             .name(DEFAULT_NAME)
             .price(DEFAULT_PRICE)
-            .decription(DEFAULT_DECRIPTION);
+            .description(DEFAULT_DESCRIPTION);
         return product;
     }
 
@@ -107,7 +107,7 @@ public class ProductResourceIntTest {
         Product testProduct = productList.get(productList.size() - 1);
         assertThat(testProduct.getName()).isEqualTo(DEFAULT_NAME);
         assertThat(testProduct.getPrice()).isEqualTo(DEFAULT_PRICE);
-        assertThat(testProduct.getDecription()).isEqualTo(DEFAULT_DECRIPTION);
+        assertThat(testProduct.getDescription()).isEqualTo(DEFAULT_DESCRIPTION);
     }
 
     @Test
@@ -163,10 +163,10 @@ public class ProductResourceIntTest {
     }
 
     @Test
-    public void checkDecriptionIsRequired() throws Exception {
+    public void checkDescriptionIsRequired() throws Exception {
         int databaseSizeBeforeTest = productRepository.findAll().size();
         // set the field null
-        product.setDecription(null);
+        product.setDescription(null);
 
         // Create the Product, which fails.
 
@@ -191,7 +191,7 @@ public class ProductResourceIntTest {
             .andExpect(jsonPath("$.[*].id").value(hasItem(product.getId())))
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME.toString())))
             .andExpect(jsonPath("$.[*].price").value(hasItem(DEFAULT_PRICE.intValue())))
-            .andExpect(jsonPath("$.[*].decription").value(hasItem(DEFAULT_DECRIPTION.toString())));
+            .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION.toString())));
     }
 
     @Test
@@ -206,7 +206,7 @@ public class ProductResourceIntTest {
             .andExpect(jsonPath("$.id").value(product.getId()))
             .andExpect(jsonPath("$.name").value(DEFAULT_NAME.toString()))
             .andExpect(jsonPath("$.price").value(DEFAULT_PRICE.intValue()))
-            .andExpect(jsonPath("$.decription").value(DEFAULT_DECRIPTION.toString()));
+            .andExpect(jsonPath("$.description").value(DEFAULT_DESCRIPTION.toString()));
     }
 
     @Test
@@ -227,7 +227,7 @@ public class ProductResourceIntTest {
         updatedProduct
             .name(UPDATED_NAME)
             .price(UPDATED_PRICE)
-            .decription(UPDATED_DECRIPTION);
+            .description(UPDATED_DESCRIPTION);
 
         restProductMockMvc.perform(put("/api/products")
             .contentType(TestUtil.APPLICATION_JSON_UTF8)
@@ -240,7 +240,7 @@ public class ProductResourceIntTest {
         Product testProduct = productList.get(productList.size() - 1);
         assertThat(testProduct.getName()).isEqualTo(UPDATED_NAME);
         assertThat(testProduct.getPrice()).isEqualTo(UPDATED_PRICE);
-        assertThat(testProduct.getDecription()).isEqualTo(UPDATED_DECRIPTION);
+        assertThat(testProduct.getDescription()).isEqualTo(UPDATED_DESCRIPTION);
     }
 
     @Test

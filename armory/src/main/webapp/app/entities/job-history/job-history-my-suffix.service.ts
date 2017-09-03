@@ -10,7 +10,6 @@ import { ResponseWrapper, createRequestOption } from '../../shared';
 export class JobHistoryMySuffixService {
 
     private resourceUrl = 'api/job-histories';
-    private resourceSearchUrl = 'api/_search/job-histories';
 
     constructor(private http: Http, private dateUtils: JhiDateUtils) { }
 
@@ -48,12 +47,6 @@ export class JobHistoryMySuffixService {
 
     delete(id: number): Observable<Response> {
         return this.http.delete(`${this.resourceUrl}/${id}`);
-    }
-
-    search(req?: any): Observable<ResponseWrapper> {
-        const options = createRequestOption(req);
-        return this.http.get(this.resourceSearchUrl, options)
-            .map((res: any) => this.convertResponse(res));
     }
 
     private convertResponse(res: Response): ResponseWrapper {

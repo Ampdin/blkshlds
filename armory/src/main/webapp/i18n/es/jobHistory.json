@@ -4,8 +4,7 @@
             "home": {
                 "title": "Job Histories",
                 "createLabel": "Crear nuevo Job History",
-                "createOrEditLabel": "Crear o editar Job History",
-                "search": "Search for Job History"
+                "createOrEditLabel": "Crear o editar Job History"
             },
             "created": "Un nuevo Job History ha sido creado con el identificador {{ param }}",
             "updated": "Un Job History ha sido actualizado con el identificador {{ param }}",

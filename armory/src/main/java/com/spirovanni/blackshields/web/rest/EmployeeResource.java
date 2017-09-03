@@ -4,7 +4,6 @@ import com.codahale.metrics.annotation.Timed;
 import com.spirovanni.blackshields.domain.Employee;
 
 import com.spirovanni.blackshields.repository.EmployeeRepository;
-import com.spirovanni.blackshields.repository.search.EmployeeSearchRepository;
 import com.spirovanni.blackshields.web.rest.util.HeaderUtil;
 import com.spirovanni.blackshields.web.rest.util.PaginationUtil;
 import com.spirovanni.blackshields.service.dto.EmployeeDTO;
@@ -25,10 +24,6 @@ import java.net.URISyntaxException;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
-
-import static org.elasticsearch.index.query.QueryBuilders.*;
 
 /**
  * REST controller for managing Employee.
@@ -44,12 +39,9 @@ public class EmployeeResource {
     private final EmployeeRepository employeeRepository;
 
     private final EmployeeMapper employeeMapper;
-
-    private final EmployeeSearchRepository employeeSearchRepository;
-    public EmployeeResource(EmployeeRepository employeeRepository, EmployeeMapper employeeMapper, EmployeeSearchRepository employeeSearchRepository) {
+    public EmployeeResource(EmployeeRepository employeeRepository, EmployeeMapper employeeMapper) {
         this.employeeRepository = employeeRepository;
         this.employeeMapper = employeeMapper;
-        this.employeeSearchRepository = employeeSearchRepository;
     }
 
     /**
@@ -69,7 +61,6 @@ public class EmployeeResource {
         Employee employee = employeeMapper.toEntity(employeeDTO);
         employee = employeeRepository.save(employee);
         EmployeeDTO result = employeeMapper.toDto(employee);
-        employeeSearchRepository.save(employee);
         return ResponseEntity.created(new URI("/api/employees/" + result.getId()))
             .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
             .body(result);
@@ -94,7 +85,6 @@ public class EmployeeResource {
         Employee employee = employeeMapper.toEntity(employeeDTO);
         employee = employeeRepository.save(employee);
         EmployeeDTO result = employeeMapper.toDto(employee);
-        employeeSearchRepository.save(employee);
         return ResponseEntity.ok()
             .headers(HeaderUtil.createEntityUpdateAlert(ENTITY_NAME, employeeDTO.getId().toString()))
             .body(result);
@@ -141,25 +131,6 @@ public class EmployeeResource {
     public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
         log.debug("REST request to delete Employee : {}", id);
         employeeRepository.delete(id);
-        employeeSearchRepository.delete(id);
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id.toString())).build();
     }
-
-    /**
-     * SEARCH  /_search/employees?query=:query : search for the employee corresponding
-     * to the query.
-     *
-     * @param query the query of the employee search
-     * @param pageable the pagination information
-     * @return the result of the search
-     */
-    @GetMapping("/_search/employees")
-    @Timed
-    public ResponseEntity<List<EmployeeDTO>> searchEmployees(@RequestParam String query, @ApiParam Pageable pageable) {
-        log.debug("REST request to search for a page of Employees for query {}", query);
-        Page<Employee> page = employeeSearchRepository.search(queryStringQuery(query), pageable);
-        HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/employees");
-        return new ResponseEntity<>(employeeMapper.toDto(page.getContent()), headers, HttpStatus.OK);
-    }
-
 }

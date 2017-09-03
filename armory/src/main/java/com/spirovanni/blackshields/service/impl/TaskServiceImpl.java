@@ -3,7 +3,6 @@ package com.spirovanni.blackshields.service.impl;
 import com.spirovanni.blackshields.service.TaskService;
 import com.spirovanni.blackshields.domain.Task;
 import com.spirovanni.blackshields.repository.TaskRepository;
-import com.spirovanni.blackshields.repository.search.TaskSearchRepository;
 import com.spirovanni.blackshields.service.dto.TaskDTO;
 import com.spirovanni.blackshields.service.mapper.TaskMapper;
 import org.slf4j.Logger;
@@ -14,9 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
-
-import static org.elasticsearch.index.query.QueryBuilders.*;
 
 /**
  * Service Implementation for managing Task.
@@ -30,12 +26,9 @@ public class TaskServiceImpl implements TaskService{
     private final TaskRepository taskRepository;
 
     private final TaskMapper taskMapper;
-
-    private final TaskSearchRepository taskSearchRepository;
-    public TaskServiceImpl(TaskRepository taskRepository, TaskMapper taskMapper, TaskSearchRepository taskSearchRepository) {
+    public TaskServiceImpl(TaskRepository taskRepository, TaskMapper taskMapper) {
         this.taskRepository = taskRepository;
         this.taskMapper = taskMapper;
-        this.taskSearchRepository = taskSearchRepository;
     }
 
     /**
@@ -49,9 +42,7 @@ public class TaskServiceImpl implements TaskService{
         log.debug("Request to save Task : {}", taskDTO);
         Task task = taskMapper.toEntity(taskDTO);
         task = taskRepository.save(task);
-        TaskDTO result = taskMapper.toDto(task);
-        taskSearchRepository.save(task);
-        return result;
+        return taskMapper.toDto(task);
     }
 
     /**
@@ -91,22 +82,5 @@ public class TaskServiceImpl implements TaskService{
     public void delete(Long id) {
         log.debug("Request to delete Task : {}", id);
         taskRepository.delete(id);
-        taskSearchRepository.delete(id);
-    }
-
-    /**
-     * Search for the task corresponding to the query.
-     *
-     *  @param query the query of the search
-     *  @return the list of entities
-     */
-    @Override
-    @Transactional(readOnly = true)
-    public List<TaskDTO> search(String query) {
-        log.debug("Request to search Tasks for query {}", query);
-        return StreamSupport
-            .stream(taskSearchRepository.search(queryStringQuery(query)).spliterator(), false)
-            .map(taskMapper::toDto)
-            .collect(Collectors.toList());
     }
 }

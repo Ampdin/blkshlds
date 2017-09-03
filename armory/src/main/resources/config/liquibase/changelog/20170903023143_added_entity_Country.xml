@@ -15,17 +15,19 @@
     <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
 
     <!--
-        Added the entity Region.
+        Added the entity Country.
     -->
-    <changeSet id="20170902052333-1" author="jhipster">
-        <createTable tableName="region">
+    <changeSet id="20170903023143-1" author="jhipster">
+        <createTable tableName="country">
             <column name="id" type="bigint" autoIncrement="${autoIncrement}">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="region_name" type="varchar(255)">
+            <column name="country_name" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
-
+            <column name="region_id" type="bigint">
+                <constraints unique="true" nullable="true" />
+            </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
         </createTable>
         

@@ -4,8 +4,7 @@
             "home": {
                 "title": "Countries",
                 "createLabel": "Genera un nuovo Country",
-                "createOrEditLabel": "Genera o modifica un Country",
-                "search": "Cerca Country"
+                "createOrEditLabel": "Genera o modifica un Country"
             },
             "created": "&Egrave; stato generato un nuovo Country con identificatore {{ param }}",
             "updated": "&Egrave; stato aggiornato Country identificato da {{ param }}",

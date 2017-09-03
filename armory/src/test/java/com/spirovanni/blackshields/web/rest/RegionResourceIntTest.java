@@ -5,7 +5,6 @@ import com.spirovanni.blackshields.ArmoryApp;
 import com.spirovanni.blackshields.domain.Region;
 import com.spirovanni.blackshields.repository.RegionRepository;
 import com.spirovanni.blackshields.service.RegionService;
-import com.spirovanni.blackshields.repository.search.RegionSearchRepository;
 import com.spirovanni.blackshields.service.dto.RegionDTO;
 import com.spirovanni.blackshields.service.mapper.RegionMapper;
 import com.spirovanni.blackshields.web.rest.errors.ExceptionTranslator;
@@ -54,9 +53,6 @@ public class RegionResourceIntTest {
     private RegionService regionService;
 
     @Autowired
-    private RegionSearchRepository regionSearchRepository;
-
-    @Autowired
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
@@ -96,7 +92,6 @@ public class RegionResourceIntTest {
 
     @Before
     public void initTest() {
-        regionSearchRepository.deleteAll();
         region = createEntity(em);
     }
 
@@ -117,10 +112,6 @@ public class RegionResourceIntTest {
         assertThat(regionList).hasSize(databaseSizeBeforeCreate + 1);
         Region testRegion = regionList.get(regionList.size() - 1);
         assertThat(testRegion.getRegionName()).isEqualTo(DEFAULT_REGION_NAME);
-
-        // Validate the Region in Elasticsearch
-        Region regionEs = regionSearchRepository.findOne(testRegion.getId());
-        assertThat(regionEs).isEqualToComparingFieldByField(testRegion);
     }
 
     @Test
@@ -184,7 +175,6 @@ public class RegionResourceIntTest {
     public void updateRegion() throws Exception {
         // Initialize the database
         regionRepository.saveAndFlush(region);
-        regionSearchRepository.save(region);
         int databaseSizeBeforeUpdate = regionRepository.findAll().size();
 
         // Update the region
@@ -203,10 +193,6 @@ public class RegionResourceIntTest {
         assertThat(regionList).hasSize(databaseSizeBeforeUpdate);
         Region testRegion = regionList.get(regionList.size() - 1);
         assertThat(testRegion.getRegionName()).isEqualTo(UPDATED_REGION_NAME);
-
-        // Validate the Region in Elasticsearch
-        Region regionEs = regionSearchRepository.findOne(testRegion.getId());
-        assertThat(regionEs).isEqualToComparingFieldByField(testRegion);
     }
 
     @Test
@@ -233,7 +219,6 @@ public class RegionResourceIntTest {
     public void deleteRegion() throws Exception {
         // Initialize the database
         regionRepository.saveAndFlush(region);
-        regionSearchRepository.save(region);
         int databaseSizeBeforeDelete = regionRepository.findAll().size();
 
         // Get the region
@@ -241,28 +226,9 @@ public class RegionResourceIntTest {
             .accept(TestUtil.APPLICATION_JSON_UTF8))
             .andExpect(status().isOk());
 
-        // Validate Elasticsearch is empty
-        boolean regionExistsInEs = regionSearchRepository.exists(region.getId());
-        assertThat(regionExistsInEs).isFalse();
-
         // Validate the database is empty
         List<Region> regionList = regionRepository.findAll();
         assertThat(regionList).hasSize(databaseSizeBeforeDelete - 1);
-    }
-
-    @Test
-    @Transactional
-    public void searchRegion() throws Exception {
-        // Initialize the database
-        regionRepository.saveAndFlush(region);
-        regionSearchRepository.save(region);
-
-        // Search the region
-        restRegionMockMvc.perform(get("/api/_search/regions?query=id:" + region.getId()))
-            .andExpect(status().isOk())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8_VALUE))
-            .andExpect(jsonPath("$.[*].id").value(hasItem(region.getId().intValue())))
-            .andExpect(jsonPath("$.[*].regionName").value(hasItem(DEFAULT_REGION_NAME.toString())));
     }
 
     @Test

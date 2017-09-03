@@ -4,8 +4,7 @@
             "home": {
                 "title": "Regions",
                 "createLabel": "Genera un nuovo Region",
-                "createOrEditLabel": "Genera o modifica un Region",
-                "search": "Cerca Region"
+                "createOrEditLabel": "Genera o modifica un Region"
             },
             "created": "&Egrave; stato generato un nuovo Region con identificatore {{ param }}",
             "updated": "&Egrave; stato aggiornato Region identificato da {{ param }}",

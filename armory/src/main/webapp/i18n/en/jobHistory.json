@@ -4,8 +4,7 @@
             "home": {
                 "title": "Job Histories",
                 "createLabel": "Create a new Job History",
-                "createOrEditLabel": "Create or edit a Job History",
-                "search": "Search for Job History"
+                "createOrEditLabel": "Create or edit a Job History"
             },
             "created": "A new Job History is created with identifier {{ param }}",
             "updated": "A Job History is updated with identifier {{ param }}",

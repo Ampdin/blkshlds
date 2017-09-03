@@ -4,8 +4,7 @@
             "home": {
                 "title": "Employees",
                 "createLabel": "Genera un nuovo Employee",
-                "createOrEditLabel": "Genera o modifica un Employee",
-                "search": "Cerca Employee"
+                "createOrEditLabel": "Genera o modifica un Employee"
             },
             "created": "&Egrave; stato generato un nuovo Employee con identificatore {{ param }}",
             "updated": "&Egrave; stato aggiornato Employee identificato da {{ param }}",

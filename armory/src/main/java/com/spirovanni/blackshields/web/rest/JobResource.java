@@ -4,7 +4,6 @@ import com.codahale.metrics.annotation.Timed;
 import com.spirovanni.blackshields.domain.Job;
 
 import com.spirovanni.blackshields.repository.JobRepository;
-import com.spirovanni.blackshields.repository.search.JobSearchRepository;
 import com.spirovanni.blackshields.web.rest.util.HeaderUtil;
 import com.spirovanni.blackshields.web.rest.util.PaginationUtil;
 import com.spirovanni.blackshields.service.dto.JobDTO;
@@ -25,10 +24,6 @@ import java.net.URISyntaxException;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
-
-import static org.elasticsearch.index.query.QueryBuilders.*;
 
 /**
  * REST controller for managing Job.
@@ -44,12 +39,9 @@ public class JobResource {
     private final JobRepository jobRepository;
 
     private final JobMapper jobMapper;
-
-    private final JobSearchRepository jobSearchRepository;
-    public JobResource(JobRepository jobRepository, JobMapper jobMapper, JobSearchRepository jobSearchRepository) {
+    public JobResource(JobRepository jobRepository, JobMapper jobMapper) {
         this.jobRepository = jobRepository;
         this.jobMapper = jobMapper;
-        this.jobSearchRepository = jobSearchRepository;
     }
 
     /**
@@ -69,7 +61,6 @@ public class JobResource {
         Job job = jobMapper.toEntity(jobDTO);
         job = jobRepository.save(job);
         JobDTO result = jobMapper.toDto(job);
-        jobSearchRepository.save(job);
         return ResponseEntity.created(new URI("/api/jobs/" + result.getId()))
             .headers(HeaderUtil.createEntityCreationAlert(ENTITY_NAME, result.getId().toString()))
             .body(result);
@@ -94,7 +85,6 @@ public class JobResource {
         Job job = jobMapper.toEntity(jobDTO);
         job = jobRepository.save(job);
         JobDTO result = jobMapper.toDto(job);
-        jobSearchRepository.save(job);
         return ResponseEntity.ok()
             .headers(HeaderUtil.createEntityUpdateAlert(ENTITY_NAME, jobDTO.getId().toString()))
             .body(result);
@@ -141,25 +131,6 @@ public class JobResource {
     public ResponseEntity<Void> deleteJob(@PathVariable Long id) {
         log.debug("REST request to delete Job : {}", id);
         jobRepository.delete(id);
-        jobSearchRepository.delete(id);
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert(ENTITY_NAME, id.toString())).build();
     }
-
-    /**
-     * SEARCH  /_search/jobs?query=:query : search for the job corresponding
-     * to the query.
-     *
-     * @param query the query of the job search
-     * @param pageable the pagination information
-     * @return the result of the search
-     */
-    @GetMapping("/_search/jobs")
-    @Timed
-    public ResponseEntity<List<JobDTO>> searchJobs(@RequestParam String query, @ApiParam Pageable pageable) {
-        log.debug("REST request to search for a page of Jobs for query {}", query);
-        Page<Job> page = jobSearchRepository.search(queryStringQuery(query), pageable);
-        HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/jobs");
-        return new ResponseEntity<>(jobMapper.toDto(page.getContent()), headers, HttpStatus.OK);
-    }
-
 }

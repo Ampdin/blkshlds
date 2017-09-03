@@ -3,26 +3,13 @@
         <span jhiTranslate="armoryApp.product.home.title">Products</span>
         <button class="btn btn-primary float-right jh-create-entity create-product" [routerLink]="['/', { outlets: { popup: ['product-new'] } }]">
             <span class="fa fa-plus"></span>
-            <span class="hidden-sm-down"  jhiTranslate="armoryApp.product.home.createLabel">
+            <span  jhiTranslate="armoryApp.product.home.createLabel">
             Create new Product
             </span>
         </button>
     </h2>
     <jhi-alert></jhi-alert>
     <div class="row">
-        <div class="col-sm-12">
-            <form name="searchForm" class="form-inline">
-                <div class="input-group w-100 mt-3">
-                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'armoryApp.product.home.search' | translate }}">
-                    <button class="input-group-addon btn btn-info" (click)="search(currentSearch)">
-                        <span class="fa fa-search"></span>
-                    </button>
-                    <button class="input-group-addon btn btn-danger" (click)="clear()" *ngIf="currentSearch">
-                        <span class="fa fa-trash-o"></span>
-                    </button>
-                </div>
-            </form>
-        </div>
     </div>
     <br/>
     <div class="table-responsive" *ngIf="products">
@@ -32,7 +19,7 @@
             <th jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <span class="fa fa-sort"></span></th>
             <th jhiSortBy="name"><span jhiTranslate="armoryApp.product.name">Name</span> <span class="fa fa-sort"></span></th>
             <th jhiSortBy="price"><span jhiTranslate="armoryApp.product.price">Price</span> <span class="fa fa-sort"></span></th>
-            <th jhiSortBy="decription"><span jhiTranslate="armoryApp.product.decription">Decription</span> <span class="fa fa-sort"></span></th>
+            <th jhiSortBy="description"><span jhiTranslate="armoryApp.product.description">Description</span> <span class="fa fa-sort"></span></th>
             <th></th>
             </tr>
             </thead>
@@ -41,7 +28,7 @@
                 <td><a [routerLink]="['../product', product.id ]">{{product.id}}</a></td>
                 <td>{{product.name}}</td>
                 <td>{{product.price}}</td>
-                <td>{{product.decription}}</td>
+                <td>{{product.description}}</td>
                 <td class="text-right">
                     <div class="btn-group flex-btn-group-container">
                         <button type="submit"

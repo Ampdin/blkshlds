@@ -4,8 +4,7 @@
             "home": {
                 "title": "Products",
                 "createLabel": "Crear nuevo Product",
-                "createOrEditLabel": "Crear o editar Product",
-                "search": "Search for Product"
+                "createOrEditLabel": "Crear o editar Product"
             },
             "delete": {
                 "question": "¿Seguro que quiere eliminar Product {{ id }}?"
@@ -15,7 +14,7 @@
             },
             "name": "Name",
             "price": "Price",
-            "decription": "Decription"
+            "description": "Description"
         }
     },
     "storeApp": {

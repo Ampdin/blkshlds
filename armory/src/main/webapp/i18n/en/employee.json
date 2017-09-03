@@ -4,8 +4,7 @@
             "home": {
                 "title": "Employees",
                 "createLabel": "Create a new Employee",
-                "createOrEditLabel": "Create or edit a Employee",
-                "search": "Search for Employee"
+                "createOrEditLabel": "Create or edit a Employee"
             },
             "created": "A new Employee is created with identifier {{ param }}",
             "updated": "A Employee is updated with identifier {{ param }}",

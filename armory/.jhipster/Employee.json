@@ -51,7 +51,7 @@
             "fieldType": "Long"
         }
     ],
-    "changelogDate": "20170902052338",
+    "changelogDate": "20170903023147",
     "javadoc": "The Employee entity.",
     "entityTableName": "employee",
     "dto": "mapstruct",
