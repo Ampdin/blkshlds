@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94101c8b-e330-40d6-ac62-51dc54ca968e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blkshlds.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/.yo-rc.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/README-DOCKER-COMPOSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/central-server-config/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/jhipster-console.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/jhipster-registry.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/log-conf/logstash.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docker/log-data/.gitignore" />
-    </list>
+    <list default="true" id="94101c8b-e330-40d6-ac62-51dc54ca968e" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,81 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".yo-rc.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/.yo-rc.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README-DOCKER-COMPOSE.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docker/README-DOCKER-COMPOSE.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="44" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/central-server-config/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logstash.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/log-conf/logstash.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jhipster-console.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/jhipster-console.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jhipster-registry.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker/jhipster-registry.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,9 +37,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/armory/node_modules" />
     <handled-path value="$PROJECT_DIR$/armory/target/aot/node_modules" />
+    <handled-path value="$PROJECT_DIR$/registry/node_modules" />
     <handled-path value="$PROJECT_DIR$/store/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="113" />
     <option name="y" value="23" />
     <option name="width" value="1167" />
@@ -146,6 +61,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -159,8 +76,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,6 +195,7 @@
       <workItem from="1504382516006" duration="2144000" />
       <workItem from="1504385565909" duration="701000" />
       <workItem from="1504389296925" duration="193000" />
+      <workItem from="1504422809773" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="A Docker functions">
       <created>1504377919666</created>
@@ -292,11 +208,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6428000" />
+    <option name="totallyTimeSpent" value="6502000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="113" y="23" width="1167" height="729" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -306,19 +221,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45335516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3934659" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2092084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -400,11 +315,66 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/docker/README-DOCKER-COMPOSE.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="375">
+            <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="44" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/central-server-config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/log-conf/logstash.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/jhipster-console.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="13:2297" ph="services: &lt;6 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1399:1430" ph="jhipster/…kin:v2.2.1" />
+            <marker date="1504414484000" expanded="true" signature="1439:1469" ph="ports: &lt;1 item&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1460:1469" ph="9411:9411" />
+            <marker date="1504414484000" expanded="true" signature="1478:2297" ph="environment: &lt;2 items&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1505:1548" ph="ES_HOSTS=…earch:9200" />
+            <marker date="1504414484000" expanded="true" signature="1563:2297" ph="ZIPKIN_UI…iState:())" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/jhipster-registry.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="69:542" ph="environment: &lt;7 items&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -436,7 +406,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="13:2297" ph="services: &lt;6 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1399:1430" ph="jhipster/…kin:v2.2.1" />
+            <marker date="1504414484000" expanded="true" signature="1439:1469" ph="ports: &lt;1 item&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1460:1469" ph="9411:9411" />
+            <marker date="1504414484000" expanded="true" signature="1478:2297" ph="environment: &lt;2 items&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1505:1548" ph="ES_HOSTS=…earch:9200" />
+            <marker date="1504414484000" expanded="true" signature="1563:2297" ph="ZIPKIN_UI…iState:())" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -463,7 +443,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="69:542" ph="environment: &lt;7 items&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -495,7 +477,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="13:2297" ph="services: &lt;6 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1399:1430" ph="jhipster/…kin:v2.2.1" />
+            <marker date="1504414484000" expanded="true" signature="1439:1469" ph="ports: &lt;1 item&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1460:1469" ph="9411:9411" />
+            <marker date="1504414484000" expanded="true" signature="1478:2297" ph="environment: &lt;2 items&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1505:1548" ph="ES_HOSTS=…earch:9200" />
+            <marker date="1504414484000" expanded="true" signature="1563:2297" ph="ZIPKIN_UI…iState:())" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -522,7 +514,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="69:542" ph="environment: &lt;7 items&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -557,7 +551,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="13:2297" ph="services: &lt;6 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1399:1430" ph="jhipster/…kin:v2.2.1" />
+            <marker date="1504414484000" expanded="true" signature="1439:1469" ph="ports: &lt;1 item&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1460:1469" ph="9411:9411" />
+            <marker date="1504414484000" expanded="true" signature="1478:2297" ph="environment: &lt;2 items&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1505:1548" ph="ES_HOSTS=…earch:9200" />
+            <marker date="1504414484000" expanded="true" signature="1563:2297" ph="ZIPKIN_UI…iState:())" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -569,7 +573,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/jhipster-console.yml">
+    <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="69:542" ph="environment: &lt;7 items&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/.yo-rc.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -585,10 +599,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/docker/jhipster-console.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504414484000" expanded="true" signature="13:2297" ph="services: &lt;6 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1399:1430" ph="jhipster/…kin:v2.2.1" />
+            <marker date="1504414484000" expanded="true" signature="1439:1469" ph="ports: &lt;1 item&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1460:1469" ph="9411:9411" />
+            <marker date="1504414484000" expanded="true" signature="1478:2297" ph="environment: &lt;2 items&gt;" />
+            <marker date="1504414484000" expanded="true" signature="1505:1548" ph="ES_HOSTS=…earch:9200" />
+            <marker date="1504414484000" expanded="true" signature="1563:2297" ph="ZIPKIN_UI…iState:())" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker/log-conf/logstash.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -601,27 +633,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker/log-conf/logstash.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker/.yo-rc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker/README-DOCKER-COMPOSE.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="44" />
+          <first_editor relative-caret-position="245">
+            <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
