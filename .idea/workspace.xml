@@ -2,7 +2,822 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94101c8b-e330-40d6-ac62-51dc54ca968e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.angular-cli.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/Country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/Department.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/Employee.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/Job.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/JobHistory.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/Location.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/Product.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/Region.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.jhipster/Task.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.mvn/wrapper/maven-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.mvn/wrapper/maven-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/.yo-rc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/jhipster-jdl.jh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/mvnw" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/mvnw.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/postcss.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/proxy.conf.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/docker/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/docker/app.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/docker/central-server-config/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/docker/central-server-config/docker-config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/docker/central-server-config/localhost-config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/docker/jhipster-registry.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/docker/mysql.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/docker/sonar.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/ApplicationWebXml.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/ArmoryApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/aop/logging/LoggingAspect.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/ApplicationProperties.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/AsyncConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/CacheConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/CloudDatabaseConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/Constants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/DatabaseConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/DateTimeFormatConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/DefaultProfileUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/GatewayConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/JacksonConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/LocaleConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/LoggingAspectConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/LoggingConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/MetricsConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/SecurityConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/ThymeleafConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/WebConfigurer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/apidoc/GatewaySwaggerResourcesProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/audit/AuditEventConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/audit/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/config/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/AbstractAuditingEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/Authority.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/Country.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/Department.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/Employee.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/Job.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/JobHistory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/Location.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/PersistentAuditEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/Region.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/Task.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/enumeration/Language.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/domain/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/gateway/TokenRelayFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/gateway/accesscontrol/AccessControlFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/gateway/ratelimiting/RateLimitingFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/gateway/responserewriting/SwaggerBasePathRewritingFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/AuthorityRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/CountryRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/CustomAuditEventRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/DepartmentRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/EmployeeRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/JobHistoryRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/JobRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/LocationRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/PersistenceAuditEventRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/RegionRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/TaskRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/UserRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/repository/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/AuthoritiesConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/DomainUserDetailsService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/SecurityUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/SpringSecurityAuditorAware.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/UserNotActivatedException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/jwt/JWTConfigurer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/jwt/JWTFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/jwt/TokenProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/security/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/AuditEventService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/CountryService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/DepartmentService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/JobHistoryService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/LocationService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/MailService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/RegionService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/TaskService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/UserService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/CountryDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/DepartmentDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/EmployeeDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/JobDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/JobHistoryDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/LocationDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/RegionDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/TaskDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/UserDTO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/dto/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/impl/CountryServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/impl/DepartmentServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/impl/JobHistoryServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/impl/LocationServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/impl/RegionServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/impl/TaskServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/CountryMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/DepartmentMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/EmployeeMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/EntityMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/JobHistoryMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/JobMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/LocationMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/RegionMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/TaskMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/UserMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/mapper/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/service/util/RandomUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/AccountResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/AuditResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/CountryResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/DepartmentResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/EmployeeResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/GatewayResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/JobHistoryResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/JobResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/LocationResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/LogsResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/ProfileInfoResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/RegionResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/TaskResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/UserJWTController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/UserResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/errors/CustomParameterizedException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/errors/ErrorConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/errors/ErrorVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/errors/ExceptionTranslator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/errors/FieldErrorVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/errors/ParameterizedErrorVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/util/HeaderUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/util/PaginationUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/vm/KeyAndPasswordVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/vm/LoggerVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/vm/LoginVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/vm/ManagedUserVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/vm/RouteVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/java/com/spirovanni/blackshields/web/rest/vm/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/.h2.server.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/banner.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/application-dev.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/application-prod.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/bootstrap-prod.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/bootstrap.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/authorities.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/00000000000000_initial_schema.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023142_added_entity_Region.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023143_added_entity_Country.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023143_added_entity_constraints_Country.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023144_added_entity_Location.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023144_added_entity_constraints_Location.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023145_added_entity_Department.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023145_added_entity_constraints_Department.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023146_added_entity_Task.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023147_added_entity_Employee.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023147_added_entity_constraints_Employee.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023148_added_entity_Job.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023148_added_entity_constraints_Job.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023149_added_entity_JobHistory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/changelog/20170903023149_added_entity_constraints_JobHistory.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/master.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/users.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/config/liquibase/users_authorities.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/i18n/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/i18n/messages_en.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/i18n/messages_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/i18n/messages_it.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/logback-spring.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/mails/activationEmail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/mails/creationEmail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/mails/passwordResetEmail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/resources/templates/error.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/account.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/account.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/activate/activate.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/activate/activate.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/activate/activate.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/activate/activate.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password-reset/finish/password-reset-finish.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password-reset/finish/password-reset-finish.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password-reset/finish/password-reset-finish.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password-reset/finish/password-reset-finish.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password-reset/init/password-reset-init.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password-reset/init/password-reset-init.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password-reset/init/password-reset-init.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password-reset/init/password-reset-init.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password/password-strength-bar.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password/password-strength-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password/password.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password/password.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password/password.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/password/password.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/register/register.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/register/register.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/register/register.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/register/register.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/settings/settings.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/settings/settings.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/account/settings/settings.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/admin.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/admin.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/audits/audit-data.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/audits/audit.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/audits/audits.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/audits/audits.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/audits/audits.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/audits/audits.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/configuration/configuration.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/configuration/configuration.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/configuration/configuration.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/configuration/configuration.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/docs/docs.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/docs/docs.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/docs/docs.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/gateway/gateway-route.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/gateway/gateway-routes.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/gateway/gateway.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/gateway/gateway.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/gateway/gateway.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/health/health-modal.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/health/health-modal.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/health/health.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/health/health.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/health/health.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/health/health.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/logs/log.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/logs/logs.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/logs/logs.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/logs/logs.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/logs/logs.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/metrics/metrics-modal.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/metrics/metrics-modal.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/metrics/metrics.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/metrics/metrics.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/metrics/metrics.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/metrics/metrics.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-management.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/admin/user-management/user-modal.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/app.constants.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/app.main-aot.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/app.main.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/app.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/app.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/blocks/config/prod.config.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/blocks/config/uib-pagination.config.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/blocks/interceptor/auth-expired.interceptor.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/blocks/interceptor/auth.interceptor.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/blocks/interceptor/errorhandler.interceptor.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/blocks/interceptor/http.provider.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/blocks/interceptor/notification.interceptor.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/country-my-suffix.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/country/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/department-my-suffix.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/department/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/employee-my-suffix.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/employee/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/entity.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job-history/job-history-my-suffix.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/job/job-my-suffix.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/location/location-my-suffix.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/product/product.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/region/region-my-suffix.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix-delete-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix-delete-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix-detail.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix-detail.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix-dialog.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix-dialog.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix-popup.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/entities/task/task-my-suffix.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/home/home.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/home/home.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/home/home.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/home/home.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/home/home.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/home/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/error/error.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/error/error.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/error/error.route.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/footer/footer.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/footer/footer.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/layout-routing.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/main/main.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/main/main.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/navbar/active-menu.directive.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/navbar/navbar.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/navbar/navbar.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/navbar/navbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/profiles/page-ribbon.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/profiles/page-ribbon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/profiles/profile-info.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/layouts/profiles/profile.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/polyfills.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/alert/alert-error.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/alert/alert.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/auth/account.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/auth/auth-jwt.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/auth/csrf.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/auth/has-any-authority.directive.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/auth/principal.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/auth/state-storage.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/auth/user-route-access-service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/constants/pagination.constants.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/index.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/language/find-language-from-key.pipe.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/language/language.constants.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/language/language.helper.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/login/login-modal.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/login/login.component.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/login/login.component.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/login/login.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/model/base-entity.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/model/request-util.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/model/response-wrapper.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/shared-common.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/shared-libs.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/shared.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/user/account.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/user/user.model.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/shared/user/user.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/app/vendor.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/content/images/hipster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/content/images/hipster2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/content/images/logo-jhipster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/content/scss/_bootstrap-variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/content/scss/global.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/content/scss/vendor.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/activate.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/audits.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/configuration.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/department.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/employee.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/error.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/gateway.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/global.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/health.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/home.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/job.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/jobHistory.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/language.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/location.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/login.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/logs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/metrics.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/password.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/product.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/region.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/register.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/reset.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/sessions.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/settings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/task.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/en/user-management.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/activate.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/audits.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/configuration.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/department.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/employee.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/error.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/gateway.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/global.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/health.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/home.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/job.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/jobHistory.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/language.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/location.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/login.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/logs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/metrics.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/password.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/product.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/region.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/register.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/reset.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/sessions.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/settings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/task.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/es/user-management.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/activate.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/audits.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/configuration.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/department.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/employee.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/error.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/gateway.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/global.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/health.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/home.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/job.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/jobHistory.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/language.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/location.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/login.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/logs.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/metrics.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/password.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/product.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/region.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/register.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/reset.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/sessions.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/settings.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/task.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/i18n/it/user-management.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/manifest.webapp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/swagger-ui/dist/images/throbber.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/main/webapp/swagger-ui/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/conf/gatling.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/conf/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/user-files/simulations/CountryGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/user-files/simulations/DepartmentGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/user-files/simulations/EmployeeGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/user-files/simulations/JobGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/user-files/simulations/JobHistoryGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/user-files/simulations/LocationGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/user-files/simulations/RegionGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/gatling/user-files/simulations/TaskGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/config/WebConfigurerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/config/WebConfigurerTestController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/gateway/responserewriting/SwaggerBasePathRewritingFilterTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/repository/CustomAuditEventRepositoryIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/security/SecurityUtilsUnitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/security/jwt/JWTFilterTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/security/jwt/TokenProviderTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/service/MailServiceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/service/UserServiceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/AccountResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/AuditResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/CountryResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/DepartmentResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/EmployeeResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/JobHistoryResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/JobResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/LocationResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/LogsResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/ProfileInfoResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/RegionResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/TaskResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/TestUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/UserJWTControllerIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/UserResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/errors/ExceptionTranslatorIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/errors/ExceptionTranslatorTestController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/java/com/spirovanni/blackshields/web/rest/util/PaginationUtilUnitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/account/account.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/admin/administration.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/country-my-suffix.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/department-my-suffix.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/employee-my-suffix.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/job-history-my-suffix.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/job-my-suffix.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/location-my-suffix.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/product.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/region-my-suffix.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/entities/task-my-suffix.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/e2e/page-objects/jhi-page-objects.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/protractor.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/account/activate/activate.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/account/password-reset/finish/password-reset-finish.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/account/password-reset/init/password-reset-init.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/account/password/password-strength-bar.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/account/password/password.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/account/register/register.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/account/settings/settings.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/admin/audits/audits.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/admin/health/health.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/country/country-my-suffix-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/department/department-my-suffix-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/employee/employee-my-suffix-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/job-history/job-history-my-suffix-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/job/job-my-suffix-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/location/location-my-suffix-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/product/product-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/region/region-my-suffix-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/app/entities/task/task-my-suffix-detail.component.spec.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/entry.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/helpers/mock-account.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/helpers/mock-language.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/helpers/mock-principal.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/helpers/mock-route.service.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/helpers/spyobject.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/javascript/spec/test.module.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/resources/config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/resources/config/bootstrap.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/resources/i18n/messages_en.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/resources/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/src/test/resources/mails/testEmail.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/tsconfig-aot.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/tsconfig.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/tslint.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/webpack/logo-jhipster.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/webpack/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/webpack/webpack.common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/webpack/webpack.dev.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/webpack/webpack.prod.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/webpack/webpack.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/armory/yarn.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/.yo-rc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/README-DOCKER-COMPOSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/central-server-config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/docker-compose.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/jhipster-console.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/jhipster-registry.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/log-conf/logstash.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker/log-data/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/.yo-rc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/armory/armory-deployment.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/armory/armory-mysql.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/armory/armory-service.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/console/jhipster-console.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/console/jhipster-elasticsearch.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/console/jhipster-logstash.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/console/logstash-config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/registry/application-configmap.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/registry/jhipster-registry.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/store/store-deployment.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/store/store-mongodb.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kubernetes/store/store-service.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/config/SecurityConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/filters/TokenRelayFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/.jhipster/Product.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/.mvn/wrapper/maven-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/.mvn/wrapper/maven-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/.yo-rc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/mvnw" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/mvnw.cmd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/app.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/central-server-config/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/central-server-config/docker-config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/central-server-config/localhost-config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/jhipster-registry.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/mongodb-cluster.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/mongodb.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/mongodb/MongoDB.Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/mongodb/scripts/init_replicaset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/docker/sonar.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/ApplicationWebXml.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/StoreApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/aop/logging/LoggingAspect.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/ApplicationProperties.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/AsyncConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/CloudDatabaseConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/Constants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/DatabaseConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/DateTimeFormatConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/DefaultProfileUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/JacksonConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/LocaleConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/LoggingAspectConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/LoggingConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/MetricsConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/MicroserviceSecurityConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/ThymeleafConfiguration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/WebConfigurer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/audit/AuditEventConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/audit/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/dbmigrations/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/config/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/domain/AbstractAuditingEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/domain/PersistentAuditEvent.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/domain/Product.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/domain/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/repository/ProductRepository.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/repository/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/security/AuthoritiesConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/security/SecurityUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/security/SpringSecurityAuditorAware.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/security/jwt/JWTConfigurer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/security/jwt/JWTFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/security/jwt/TokenProvider.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/service/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/LogsResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/ProductResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/ProfileInfoResource.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/errors/CustomParameterizedException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/errors/ErrorConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/errors/ErrorVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/errors/ExceptionTranslator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/errors/FieldErrorVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/errors/ParameterizedErrorVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/util/HeaderUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/util/PaginationUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/vm/LoggerVM.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/java/com/spirovanni/blackshields/web/rest/vm/package-info.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/banner.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/config/application-dev.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/config/application-prod.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/config/bootstrap-prod.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/config/bootstrap.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/i18n/messages.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/i18n/messages_en.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/i18n/messages_es.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/i18n/messages_it.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/logback-spring.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/static/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/main/resources/templates/error.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/gatling/conf/gatling.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/gatling/conf/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/gatling/user-files/simulations/ProductGatlingTest.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/config/WebConfigurerTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/config/WebConfigurerTestController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/web/rest/LogsResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/web/rest/ProductResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/web/rest/ProfileInfoResourceIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/web/rest/TestUtil.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/web/rest/errors/ExceptionTranslatorIntTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/web/rest/errors/ExceptionTranslatorTestController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/java/com/spirovanni/blackshields/web/rest/util/PaginationUtilUnitTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/resources/config/application.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/resources/config/bootstrap.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/src/test/resources/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/store/yarn.lock" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blkshlds.iml" afterPath="$PROJECT_DIR$/.idea/blkshlds.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/.travis.yml" afterPath="$PROJECT_DIR$/registry/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/Dockerfile" afterPath="$PROJECT_DIR$/registry/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/NOTICE" afterPath="$PROJECT_DIR$/registry/NOTICE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/README.md" afterPath="$PROJECT_DIR$/registry/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/app.json" afterPath="$PROJECT_DIR$/registry/app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/central-config/application.yml" afterPath="$PROJECT_DIR$/registry/central-config/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/package.json" afterPath="$PROJECT_DIR$/registry/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/pom.xml" afterPath="$PROJECT_DIR$/registry/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/JHipsterRegistryApp.java" afterPath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/JHipsterRegistryApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/filters/RegistryConfiguration.java" afterPath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/filters/RegistryConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/security/jwt/TokenProvider.java" afterPath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/security/jwt/TokenProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/web/rest/AccountResource.java" afterPath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/web/rest/AccountResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/web/rest/UserJWTController.java" afterPath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/web/rest/UserJWTController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/resources/config/application-dev.yml" afterPath="$PROJECT_DIR$/registry/src/main/resources/config/application-dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/resources/config/application-prod.yml" afterPath="$PROJECT_DIR$/registry/src/main/resources/config/application-prod.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/resources/config/application.yml" afterPath="$PROJECT_DIR$/registry/src/main/resources/config/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/resources/config/bootstrap-prod.yml" afterPath="$PROJECT_DIR$/registry/src/main/resources/config/bootstrap-prod.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/resources/templates/error.html" afterPath="$PROJECT_DIR$/registry/src/main/resources/templates/error.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/admin.module.ts" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/admin.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/admin.route.ts" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/admin.route.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/configuration/configuration.component.html" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/configuration/configuration.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/index.ts" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/logs/logs.component.html" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/logs/logs.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/logs/logs.route.ts" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/admin/logs/logs.route.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/home/home.component.ts" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/home/home.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/layouts/footer/footer.component.html" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/layouts/footer/footer.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/layouts/navbar/navbar.component.html" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/layouts/navbar/navbar.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/layouts/navbar/navbar.component.ts" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/layouts/navbar/navbar.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/shared/index.ts" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/shared/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/shared/shared.module.ts" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/shared/shared.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/registry/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/main/webapp/swagger-ui/index.html" afterPath="$PROJECT_DIR$/registry/src/main/webapp/swagger-ui/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/test/java/io/github/jhipster/registry/web/rest/AccountResourceTest.java" afterPath="$PROJECT_DIR$/registry/src/test/java/io/github/jhipster/registry/web/rest/AccountResourceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/test/javascript/spec/app/home/home.component.spec.ts" afterPath="$PROJECT_DIR$/registry/src/test/javascript/spec/app/home/home.component.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/test/javascript/spec/app/registry/history/history.component.spec.ts" afterPath="$PROJECT_DIR$/registry/src/test/javascript/spec/app/registry/history/history.component.spec.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/test/javascript/spec/test.module.ts" afterPath="$PROJECT_DIR$/registry/src/test/javascript/spec/test.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registry/src/test/resources/config/application.yml" afterPath="$PROJECT_DIR$/registry/src/test/resources/config/application.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +830,7 @@
     <favorites_list name="blkshlds" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,14 +857,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/armory/node_modules" />
-    <handled-path value="$PROJECT_DIR$/armory/target/aot/node_modules" />
-    <handled-path value="$PROJECT_DIR$/registry/node_modules" />
-    <handled-path value="$PROJECT_DIR$/registry/target/aot/node_modules" />
-    <handled-path value="$PROJECT_DIR$/store/node_modules" />
+    <handled-path value="$PROJECT_DIR$/barbican/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-3" />
+    <option name="y" value="24" />
     <option name="width" value="1280" />
     <option name="height" value="729" />
   </component>
@@ -69,8 +881,9 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -82,7 +895,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +1017,9 @@
       <workItem from="1504385565909" duration="701000" />
       <workItem from="1504389296925" duration="193000" />
       <workItem from="1504422809773" duration="8711000" />
-      <workItem from="1504439277488" duration="239000" />
+      <workItem from="1504439277488" duration="1575000" />
+      <workItem from="1504446475756" duration="4305000" />
+      <workItem from="1511587254105" duration="2020000" />
     </task>
     <task id="LOCAL-00001" summary="A Docker functions">
       <created>1504377919666</created>
@@ -228,14 +1042,21 @@
       <option name="project" value="LOCAL" />
       <updated>1504439516636</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update unversioned files">
+      <created>1504439542190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1504439542190</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15378000" />
+    <option name="totallyTimeSpent" value="23039000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="729" extended-state="0" />
+    <frame x="-3" y="24" width="1280" height="768" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -245,19 +1066,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45335516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42615384" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21243942" sideWeight="0.4918033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21567044" sideWeight="0.4918033" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2092084" sideWeight="0.5081967" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2092084" sideWeight="0.5081967" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -270,60 +1091,10 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/Reflect.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/Reflect.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/Reflect.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/karma/config.tpl.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/ng/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/ng/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/ng/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/enum/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/enum/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/enum/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/pipe/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/pipe/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/pipe/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/class/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/class/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/class/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/guard/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/guard/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/guard/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/module/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/module/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/module/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/service/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/service/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/service/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/component/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/component/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/component/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/directive/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/directive/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/directive/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/interface/index.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/interface/index.d.ts" />
-        <option value="$PROJECT_DIR$/armory/node_modules/@angular/cli/blueprints/interface/index.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-metadata.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-decorate.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
-        <option value="$PROJECT_DIR$/armory/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
+        <option value="$PROJECT_DIR$/barbican/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/Reflect.js" />
+        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/Reflect.js.map" />
+        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/Reflect.d.ts" />
       </list>
     </option>
   </component>
@@ -341,6 +1112,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/store/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/docker/README-DOCKER-COMPOSE.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -369,10 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
-            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -380,7 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -388,9 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="69:542" ph="environment: &lt;7 items&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -419,10 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
-            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -430,7 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -448,9 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="69:542" ph="environment: &lt;7 items&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,10 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
-            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -490,7 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -508,9 +1269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="69:542" ph="environment: &lt;7 items&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -542,10 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
-            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -553,7 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +1345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-245">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -600,7 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-407">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,9 +1359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="69:542" ph="environment: &lt;7 items&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -624,7 +1372,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="121">
             <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -634,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,7 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,7 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-532">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,10 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-322">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1504414484000" expanded="true" signature="1367:1376" ph="jhipster-curator: &lt;2 keys&gt;" />
-            <marker date="1504414484000" expanded="true" signature="1376:2297" ph="jhipster-zipkin: &lt;3 keys&gt;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -669,7 +1409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-66">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,9 +1423,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1644">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/store/README.md" />
   </component>
 </project>

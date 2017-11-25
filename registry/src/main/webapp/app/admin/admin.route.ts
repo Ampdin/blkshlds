@@ -2,7 +2,9 @@ import { Routes } from '@angular/router';
 
 import {
     configurationRoute,
+    docsRoute,
     healthRoute,
+    logfileRoute,
     logsRoute,
     metricsRoute
 } from './';
@@ -11,7 +13,9 @@ import { UserRouteAccessService } from '../shared';
 
 const ADMIN_ROUTES = [
     configurationRoute,
+    docsRoute,
     healthRoute,
+    logfileRoute,
     logsRoute,
     metricsRoute
 ];
