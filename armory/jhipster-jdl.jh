@@ -1,0 +1,264 @@
+entity Region {
+	regionName String
+}
+
+entity SocMajor {
+	socMajorName String,
+    socMajorCode String,
+    socMajorAvator ImageBlob,
+    socMajorDescription String,
+    socMajorURL String,
+    socMajorPreviewImage String
+}
+
+entity Country {
+	countryName String
+}
+
+entity SocMinor {
+	socMinorName String,
+    socMinorCode String,
+    socMinorAvator ImageBlob,
+    socMinorDescription String,
+    socMinorURL String,
+    socMinorPreviewImage String
+}
+
+entity SocBroad {
+	socBroadName String,
+    socBroadCode String,
+    socBroadAvator ImageBlob,
+    socBroadDescription String,
+    socBroadURL String,
+    socBroadPreviewImage String
+}
+
+entity SocSpecific {
+	socSpecificName String,
+    socSpecificCode String,
+    socSpecificAvator ImageBlob,
+    socSpecificDescription String,
+    socSpecificURL String,
+    socSpecificPreviewImage String,
+    group Group,
+    totEmp Integer,
+    empPrse Long,
+    hourlyMean Long,
+    annualMean Long,
+    meanPrse Long,
+    hrPctHighest Long,
+    hrPctHigh Long,
+    hourlyMedian Long,
+    hrPctBelow Long,
+    hrPctLowest Long,
+    anPctHighest Long,
+    anPctHigh Long,
+    annualMedian Long,
+    anPctBelow Long,
+    anPctLowest Long,
+}
+
+entity Skills {
+	socSpecificSkName String,
+    socSpecificSkCode String,
+    anDaInLv Long,
+    anDaInIm Long,    
+    asCaOthLv Long,
+    asCaOthIm Long,    
+    coDevOthLv Long,
+    coDevOthIm Long,
+    coPerOutOrgLv Long,
+    coPerOutOrgIm Long,
+    coSupPeSubLv Long,
+    coSupPeSubIm Long,
+    conMaProLv Long,
+    conMaProIm Long,
+    cooWorActOthLv Long,
+    cooWorActOthIm Long,
+    devBuildTeamsLv Long,
+    devBuildTeamsIm Long,
+    devObjStratLv Long,
+    devObjStratIm Long,
+    docRecInfoLv Long,
+    docRecInfoIm Long,
+    drLayOutSpecLv Long,
+    drLayOutSpecIm Long,
+    estMaIntRelLv Long,
+    estMaIntRelIm Long,
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+}
+
+entity Department {
+	departmentName String required
+}
+
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+entity Task {
+	title String,
+    taskID String,
+    taskName String,
+    scaleID String,
+    scaleName String,
+    dataValue BigDecimal,
+    n Long,
+    standardError BigDecimal,
+    lowerClBound BigDecimal,
+    upperClBound BigDecimal,
+    recommendSuppress String,
+    notRelevant String,
+    date LocalDate,
+    domainSource String,
+	description String
+}
+
+/**
+ * The Employee entity.
+ */
+entity Employee {
+	/**
+	* The firstname attribute.
+	*/
+    employeeId Long,
+    playerType String,
+	firstName String,
+	lastName String,
+	email String,
+	phone String,
+    badgeNumber String,
+	startDate LocalDate,
+    memberSince ZonedDateTime,
+	previousSalary Long,
+    currentSalary Long,
+    goalSalary Long,
+    pathGoal String,
+    address String,
+    city String,
+    zip Long,
+    state String,
+    employeeAvatar ImageBlob
+}
+
+entity Job {
+	jobTitle String,
+	minSalary Long,
+	maxSalary Long
+}
+
+entity JobHistory {
+	startDate LocalDate,
+	endDate LocalDate,
+	language Language
+}
+
+entity Discipline {
+	disciplineName String required,
+    disciplineAvator ImageBlob,
+    disciplineDescription String,
+    disciplinePrice Long
+}
+
+entity Program {
+	programName String required,
+    programAvator ImageBlob,
+	programDescription String,
+    programPrice Long
+}
+
+entity Course {
+	courseTitle String required,
+    courseAvator ImageBlob,
+    courseDescription String,
+    coursePrice Long,
+    courseLevel Level
+}
+
+entity Lesson {
+	lessonTitle String required,
+    lessonAvator ImageBlob,
+	lessonDescription String,
+    language Language
+}
+
+entity Resource {
+	resourceName String,
+    resourceAvator ImageBlob,
+    resourceDescription String,
+    resourceURL String,
+    resourcePreviewImage String,
+    resourceType ResourceType,
+    weight Integer
+}
+
+enum Level {
+	NOVICE, BEGINNER, INTERMEDIATE, ADVANCED, PROFESSIONAL
+}
+
+enum Group {
+	MAIN, MAJOR, ROLE, TITLED
+}
+
+enum ResourceType {
+	VIDEO, IMAGE, TUTORIAL, PAGE, PARTIAL, TOOL 
+}
+
+enum Language {
+    ENGLISH, SPANISH, HUNGARIAN, GERMAN, FRENCH
+}
+
+relationship OneToMany {
+	Discipline{resources} to Resource,
+	Program{resources} to Resource,
+    Course{resources} to Resource,
+    Lesson{resources} to Resource,
+    SocMajor{socminor} to SocMinor,
+    SocMinor{socbroad} to SocBroad,
+    SocBroad{socspecific} to SocSpecific,
+    Region{country} to Country,
+    Employee{job} to Job,
+    Country{location} to Location,
+	Department{employee} to Employee,
+    Discipline{employee} to Employee,
+    SocSpecific{employee} to Employee,
+    Location{department} to Department
+}
+
+relationship ManyToMany {
+	Discipline{programs} to Program{disciplines},
+    Program{courses} to Course{programs},
+	Course{lessons} to Lesson{courses},
+	Job{task(title)} to Task{job}    
+}
+
+relationship ManyToOne {
+	Employee{manager} to Employee
+}
+
+// defining multiple oneToOne relationships
+relationship OneToOne {
+	JobHistory{job} to Job,
+	JobHistory{department} to Department,
+	JobHistory{employee} to Employee,
+    SocSpecific{skills} to Skills
+}
+
+// Set pagination options
+paginate Lesson, JobHistory, Employee with infinite-scroll
+paginate Program, Course, Job, SocSpecific with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl except Employee, Job
+// Set an angular suffix
+angularSuffix * with mySuffix

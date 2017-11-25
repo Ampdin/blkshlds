@@ -1,0 +1,55 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "resources",
+            "otherEntityName": "resource",
+            "otherEntityRelationshipName": "discipline"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "employee",
+            "otherEntityName": "employee",
+            "otherEntityRelationshipName": "discipline"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "disciplines",
+            "relationshipName": "programs",
+            "otherEntityName": "program",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "disciplineName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "disciplineAvator",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        },
+        {
+            "fieldName": "disciplineDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "disciplinePrice",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20171125084100",
+    "entityTableName": "discipline",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "armory"
+}

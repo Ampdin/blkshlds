@@ -1,0 +1,52 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "socMajor",
+            "otherEntityName": "socMajor",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "socbroad",
+            "otherEntityName": "socBroad",
+            "otherEntityRelationshipName": "socMinor"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "socMinorName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "socMinorCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "socMinorAvator",
+            "fieldType": "byte[]",
+            "fieldTypeBlobContent": "image"
+        },
+        {
+            "fieldName": "socMinorDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "socMinorURL",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "socMinorPreviewImage",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171125084050",
+    "entityTableName": "soc_minor",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "armory"
+}

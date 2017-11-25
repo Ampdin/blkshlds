@@ -1,0 +1,118 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "socSpecificSkName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "socSpecificSkCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "anDaInLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "anDaInIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "asCaOthLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "asCaOthIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "coDevOthLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "coDevOthIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "coPerOutOrgLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "coPerOutOrgIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "coSupPeSubLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "coSupPeSubIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "conMaProLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "conMaProIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "cooWorActOthLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "cooWorActOthIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "devBuildTeamsLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "devBuildTeamsIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "devObjStratLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "devObjStratIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "docRecInfoLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "docRecInfoIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "drLayOutSpecLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "drLayOutSpecIm",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "estMaIntRelLv",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "estMaIntRelIm",
+            "fieldType": "Long"
+        }
+    ],
+    "changelogDate": "20171125084053",
+    "entityTableName": "skills",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "mySuffix",
+    "microserviceName": "armory"
+}
