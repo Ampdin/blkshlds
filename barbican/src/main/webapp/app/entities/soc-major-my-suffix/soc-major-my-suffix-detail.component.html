@@ -1,0 +1,50 @@
+
+<div *ngIf="socMajor">
+    <h2><span jhiTranslate="barbicanApp.socMajor.detail.title">Soc Major</span> {{socMajor.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="barbicanApp.socMajor.socMajorName">Soc Major Name</span></dt>
+        <dd>
+            <span>{{socMajor.socMajorName}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMajor.socMajorCode">Soc Major Code</span></dt>
+        <dd>
+            <span>{{socMajor.socMajorCode}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMajor.socMajorAvator">Soc Major Avator</span></dt>
+        <dd>
+            <div *ngIf="socMajor.socMajorAvator">
+                <a (click)="openFile(socMajor.socMajorAvatorContentType, socMajor.socMajorAvator)">
+                    <img [src]="'data:' + socMajor.socMajorAvatorContentType + ';base64,' + socMajor.socMajorAvator" style="max-width: 100%;" alt="socMajor image"/>
+                </a>
+                {{socMajor.socMajorAvatorContentType}}, {{byteSize(socMajor.socMajorAvator)}}
+            </div>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMajor.socMajorDescription">Soc Major Description</span></dt>
+        <dd>
+            <span>{{socMajor.socMajorDescription}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMajor.socMajorURL">Soc Major URL</span></dt>
+        <dd>
+            <span>{{socMajor.socMajorURL}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMajor.socMajorPreviewImage">Soc Major Preview Image</span></dt>
+        <dd>
+            <span>{{socMajor.socMajorPreviewImage}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'soc-major-my-suffix/'+ socMajor.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

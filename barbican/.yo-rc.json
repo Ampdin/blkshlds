@@ -2,7 +2,8 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "com.spirovanni.blackshields",
-      "nativeLanguage": "en"
+      "nativeLanguage": "en",
+      "microservicePath": "../armory"
     },
     "jhipsterVersion": "4.11.0",
     "baseName": "barbican",

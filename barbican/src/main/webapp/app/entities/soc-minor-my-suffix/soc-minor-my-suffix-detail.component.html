@@ -1,0 +1,56 @@
+
+<div *ngIf="socMinor">
+    <h2><span jhiTranslate="barbicanApp.socMinor.detail.title">Soc Minor</span> {{socMinor.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="barbicanApp.socMinor.socMinorName">Soc Minor Name</span></dt>
+        <dd>
+            <span>{{socMinor.socMinorName}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMinor.socMinorCode">Soc Minor Code</span></dt>
+        <dd>
+            <span>{{socMinor.socMinorCode}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMinor.socMinorAvator">Soc Minor Avator</span></dt>
+        <dd>
+            <div *ngIf="socMinor.socMinorAvator">
+                <a (click)="openFile(socMinor.socMinorAvatorContentType, socMinor.socMinorAvator)">
+                    <img [src]="'data:' + socMinor.socMinorAvatorContentType + ';base64,' + socMinor.socMinorAvator" style="max-width: 100%;" alt="socMinor image"/>
+                </a>
+                {{socMinor.socMinorAvatorContentType}}, {{byteSize(socMinor.socMinorAvator)}}
+            </div>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMinor.socMinorDescription">Soc Minor Description</span></dt>
+        <dd>
+            <span>{{socMinor.socMinorDescription}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMinor.socMinorURL">Soc Minor URL</span></dt>
+        <dd>
+            <span>{{socMinor.socMinorURL}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMinor.socMinorPreviewImage">Soc Minor Preview Image</span></dt>
+        <dd>
+            <span>{{socMinor.socMinorPreviewImage}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socMinor.socMajor">Soc Major</span></dt>
+        <dd>
+            <div *ngIf="socMinor.socMajorId">
+                <a [routerLink]="['/soc-major', socMinor.socMajorId]">{{socMinor.socMajorId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'soc-minor-my-suffix/'+ socMinor.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

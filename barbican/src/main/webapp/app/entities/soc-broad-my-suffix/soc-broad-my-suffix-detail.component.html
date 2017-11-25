@@ -1,0 +1,56 @@
+
+<div *ngIf="socBroad">
+    <h2><span jhiTranslate="barbicanApp.socBroad.detail.title">Soc Broad</span> {{socBroad.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="barbicanApp.socBroad.socBroadName">Soc Broad Name</span></dt>
+        <dd>
+            <span>{{socBroad.socBroadName}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socBroad.socBroadCode">Soc Broad Code</span></dt>
+        <dd>
+            <span>{{socBroad.socBroadCode}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socBroad.socBroadAvator">Soc Broad Avator</span></dt>
+        <dd>
+            <div *ngIf="socBroad.socBroadAvator">
+                <a (click)="openFile(socBroad.socBroadAvatorContentType, socBroad.socBroadAvator)">
+                    <img [src]="'data:' + socBroad.socBroadAvatorContentType + ';base64,' + socBroad.socBroadAvator" style="max-width: 100%;" alt="socBroad image"/>
+                </a>
+                {{socBroad.socBroadAvatorContentType}}, {{byteSize(socBroad.socBroadAvator)}}
+            </div>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socBroad.socBroadDescription">Soc Broad Description</span></dt>
+        <dd>
+            <span>{{socBroad.socBroadDescription}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socBroad.socBroadURL">Soc Broad URL</span></dt>
+        <dd>
+            <span>{{socBroad.socBroadURL}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socBroad.socBroadPreviewImage">Soc Broad Preview Image</span></dt>
+        <dd>
+            <span>{{socBroad.socBroadPreviewImage}}</span>
+        </dd>
+        <dt><span jhiTranslate="barbicanApp.socBroad.socMinor">Soc Minor</span></dt>
+        <dd>
+            <div *ngIf="socBroad.socMinorId">
+                <a [routerLink]="['/soc-minor', socBroad.socMinorId]">{{socBroad.socMinorId}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'soc-broad-my-suffix/'+ socBroad.id + '/edit'} }]"
+            replaceUrl="true"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

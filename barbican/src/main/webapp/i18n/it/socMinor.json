@@ -1,0 +1,33 @@
+{
+    "barbicanApp": {
+        "socMinor" : {
+            "home": {
+                "title": "SocMinors",
+                "createLabel": "Genera un nuovo Soc Minor",
+                "createOrEditLabel": "Genera o modifica un Soc Minor",
+                "search": "Cerca Soc Minor"
+            },
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Soc Minor {{ id }}?"
+            },
+            "detail": {
+                "title": "Soc Minor"
+            },
+            "socMinorName": "Soc Minor Name",
+            "socMinorCode": "Soc Minor Code",
+            "socMinorAvator": "Soc Minor Avator",
+            "socMinorDescription": "Soc Minor Description",
+            "socMinorURL": "Soc Minor URL",
+            "socMinorPreviewImage": "Soc Minor Preview Image",
+            "socMajor": "Soc Major",
+            "socbroad": "Socbroad"
+        }
+    },
+    "armoryApp": {
+        "socMinor" : {
+            "created": "&Egrave; stato generato un nuovo Soc Minor con identificatore { param }}",
+            "updated": "&Egrave; stato aggiornato Soc Minor identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Soc Minor con identificatore {{ param }}"
+        }
+    }
+}

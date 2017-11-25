@@ -1,0 +1,90 @@
+<div>
+    <h2>
+        <span jhiTranslate="barbicanApp.socBroad.home.title">Soc Broads</span>
+        <button class="btn btn-primary float-right jh-create-entity create-soc-broad-my-suffix" [routerLink]="['/', { outlets: { popup: ['soc-broad-my-suffix-new'] } }]">
+            <span class="fa fa-plus"></span>
+            <span class="hidden-sm-down"  jhiTranslate="barbicanApp.socBroad.home.createLabel">
+            Create new Soc Broad
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <div class="row">
+        <div class="col-sm-12">
+            <form name="searchForm" class="form-inline">
+                <div class="input-group w-100 mt-3">
+                    <input type="text" class="form-control" [(ngModel)]="currentSearch" id="currentSearch" name="currentSearch" placeholder="{{ 'barbicanApp.socBroad.home.search' | translate }}">
+                    <button class="input-group-addon btn btn-info" (click)="search(currentSearch)">
+                        <span class="fa fa-search"></span>
+                    </button>
+                    <button class="input-group-addon btn btn-danger" (click)="clear()" *ngIf="currentSearch">
+                        <span class="fa fa-trash-o"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive" *ngIf="socBroads">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span jhiTranslate="global.field.id">ID</span></th>
+            <th><span jhiTranslate="barbicanApp.socBroad.socBroadName">Soc Broad Name</span></th>
+            <th><span jhiTranslate="barbicanApp.socBroad.socBroadCode">Soc Broad Code</span></th>
+            <th><span jhiTranslate="barbicanApp.socBroad.socBroadAvator">Soc Broad Avator</span></th>
+            <th><span jhiTranslate="barbicanApp.socBroad.socBroadDescription">Soc Broad Description</span></th>
+            <th><span jhiTranslate="barbicanApp.socBroad.socBroadURL">Soc Broad URL</span></th>
+            <th><span jhiTranslate="barbicanApp.socBroad.socBroadPreviewImage">Soc Broad Preview Image</span></th>
+            <th><span jhiTranslate="barbicanApp.socBroad.socMinor">Soc Minor</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let socBroad of socBroads ;trackBy: trackId">
+                <td><a [routerLink]="['../soc-broad-my-suffix', socBroad.id ]">{{socBroad.id}}</a></td>
+                <td>{{socBroad.socBroadName}}</td>
+                <td>{{socBroad.socBroadCode}}</td>
+                <td>
+                    <a *ngIf="socBroad.socBroadAvator" (click)="openFile(socBroad.socBroadAvatorContentType, socBroad.socBroadAvator)">
+                        <img [src]="'data:' + socBroad.socBroadAvatorContentType + ';base64,' + socBroad.socBroadAvator" style="max-height: 30px;" alt="socBroad image"/>
+                    </a>
+                    <span *ngIf="socBroad.socBroadAvator">{{socBroad.socBroadAvatorContentType}}, {{byteSize(socBroad.socBroadAvator)}}</span>
+                </td>
+                <td>{{socBroad.socBroadDescription}}</td>
+                <td>{{socBroad.socBroadURL}}</td>
+                <td>{{socBroad.socBroadPreviewImage}}</td>
+                <td>
+                    <div *ngIf="socBroad.socMinorId">
+                        <a [routerLink]="['../soc-minor', socBroad.socMinorId  ]" >{{socBroad.socMinorId}}</a>
+                    </div>
+                </td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['../soc-broad-my-suffix', socBroad.id ]"
+                                class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'soc-broad-my-suffix/'+ socBroad.id + '/edit'} }]"
+                                replaceUrl="true"
+                                class="btn btn-primary btn-sm">
+                            <span class="fa fa-pencil"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'soc-broad-my-suffix/'+ socBroad.id + '/delete'} }]"
+                                replaceUrl="true"
+                                class="btn btn-danger btn-sm">
+                            <span class="fa fa-remove"></span>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

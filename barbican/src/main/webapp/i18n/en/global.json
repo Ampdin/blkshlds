@@ -7,6 +7,11 @@
             "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
             "entities": {
                 "main": "Entities",
+                "regionMySuffix": "Region",
+                "socMajorMySuffix": "Soc Major",
+                "countryMySuffix": "Country",
+                "socMinorMySuffix": "Soc Minor",
+                "socBroadMySuffix": "Soc Broad",
                 "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

@@ -1,0 +1,67 @@
+<form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="mySocMajorLabel" jhiTranslate="barbicanApp.socMajor.home.createOrEditLabel">Create or edit a Soc Major</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                (click)="clear()">&times;</button>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" [hidden]="!socMajor.id">
+            <label for="id" jhiTranslate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                   [(ngModel)]="socMajor.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="barbicanApp.socMajor.socMajorName" for="field_socMajorName">Soc Major Name</label>
+            <input type="text" class="form-control" name="socMajorName" id="field_socMajorName"
+                [(ngModel)]="socMajor.socMajorName" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="barbicanApp.socMajor.socMajorCode" for="field_socMajorCode">Soc Major Code</label>
+            <input type="text" class="form-control" name="socMajorCode" id="field_socMajorCode"
+                [(ngModel)]="socMajor.socMajorCode" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="barbicanApp.socMajor.socMajorAvator" for="field_socMajorAvator">Soc Major Avator</label>
+            <div>
+                <img [src]="'data:' + socMajor.socMajorAvatorContentType + ';base64,' + socMajor.socMajorAvator" style="max-height: 100px;" *ngIf="socMajor.socMajorAvator" alt="socMajor image"/>
+                <div *ngIf="socMajor.socMajorAvator" class="form-text text-danger clearfix">
+                    <span class="pull-left">{{socMajor.socMajorAvatorContentType}}, {{byteSize(socMajor.socMajorAvator)}}</span>
+                    <button type="button" (click)="clearInputImage('socMajorAvator', 'socMajorAvatorContentType', 'fileImage')" class="btn btn-secondary btn-xs pull-right">
+                        <span class="fa fa-times"></span>
+                    </button>
+                </div>
+                <input type="file" id="file_socMajorAvator" (change)="setFileData($event, socMajor, 'socMajorAvator', true)" accept="image/*" jhiTranslate="entity.action.addimage"/>
+            </div>
+            <input type="hidden" class="form-control" name="socMajorAvator" id="field_socMajorAvator"
+                [(ngModel)]="socMajor.socMajorAvator" />
+            <input type="hidden" class="form-control" name="socMajorAvatorContentType" id="field_socMajorAvatorContentType"
+                [(ngModel)]="socMajor.socMajorAvatorContentType" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="barbicanApp.socMajor.socMajorDescription" for="field_socMajorDescription">Soc Major Description</label>
+            <input type="text" class="form-control" name="socMajorDescription" id="field_socMajorDescription"
+                [(ngModel)]="socMajor.socMajorDescription" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="barbicanApp.socMajor.socMajorURL" for="field_socMajorURL">Soc Major URL</label>
+            <input type="text" class="form-control" name="socMajorURL" id="field_socMajorURL"
+                [(ngModel)]="socMajor.socMajorURL" />
+        </div>
+        <div class="form-group">
+            <label class="form-control-label" jhiTranslate="barbicanApp.socMajor.socMajorPreviewImage" for="field_socMajorPreviewImage">Soc Major Preview Image</label>
+            <input type="text" class="form-control" name="socMajorPreviewImage" id="field_socMajorPreviewImage"
+                [(ngModel)]="socMajor.socMajorPreviewImage" />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="clear()">
+            <span class="fa fa-ban"></span>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+            <span class="fa fa-save"></span>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

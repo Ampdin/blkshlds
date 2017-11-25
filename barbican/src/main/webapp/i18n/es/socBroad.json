@@ -1,0 +1,33 @@
+{
+    "barbicanApp": {
+        "socBroad" : {
+            "home": {
+                "title": "Soc Broads",
+                "createLabel": "Crear nuevo Soc Broad",
+                "createOrEditLabel": "Crear o editar Soc Broad",
+                "search": "Search for Soc Broad"
+            },
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Soc Broad {{ id }}?"
+            },
+            "detail": {
+                "title": "Soc Broad"
+            },
+            "socBroadName": "Soc Broad Name",
+            "socBroadCode": "Soc Broad Code",
+            "socBroadAvator": "Soc Broad Avator",
+            "socBroadDescription": "Soc Broad Description",
+            "socBroadURL": "Soc Broad URL",
+            "socBroadPreviewImage": "Soc Broad Preview Image",
+            "socMinor": "Soc Minor",
+            "socspecific": "Socspecific"
+        }
+    },
+    "armoryApp": {
+        "socBroad" : {
+            "created": "Un nuevo Soc Broad ha sido creado con el identificador {{ param }}",
+            "updated": "Un Soc Broad ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Soc Broad ha sido eliminado con el identificador {{ param }}"
+        }
+    }
+}
