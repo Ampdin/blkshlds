@@ -2,8 +2,7 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "com.spirovanni.blackshields",
-      "nativeLanguage": "en",
-      "microservicePath": "../armory"
+      "nativeLanguage": "en"
     },
     "jhipsterVersion": "4.11.0",
     "baseName": "barbican",
@@ -12,18 +11,18 @@
     "serverPort": "8080",
     "authenticationType": "jwt",
     "hibernateCache": "hazelcast",
-    "clusteredHttpSession": false,
+    "clusteredHttpSession": "hazelcast",
     "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "mysql",
     "prodDatabaseType": "mysql",
     "searchEngine": "elasticsearch",
-    "messageBroker": "kafka",
+    "messageBroker": false,
     "serviceDiscoveryType": "eureka",
     "buildTool": "maven",
     "enableSocialSignIn": false,
-    "enableSwaggerCodegen": true,
-    "jwtSecretKey": "1717e9c97192f57d659919e726db58ab9f9048e8",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "87f925352d3af71fdb137da770a82d6185a6b012",
     "clientFramework": "angularX",
     "useSass": true,
     "clientPackageManager": "yarn",
@@ -44,32 +43,8 @@
         "version": "2.0.0"
       },
       {
-        "name": "generator-jhipster-pages",
-        "version": "2.0.0"
-      },
-      {
-        "name": "generator-jhipster-swagger-api-first",
-        "version": "1.0.1"
-      },
-      {
-        "name": "generator-jhipster-leaflet",
-        "version": "1.0.0"
-      },
-      {
-        "name": "generator-jhipster-primeng-charts",
-        "version": "0.0.3"
-      },
-      {
-        "name": "generator-jhipster-nav-element",
-        "version": "1.4.16"
-      },
-      {
-        "name": "generator-jhipster-primeng-entity",
-        "version": "1.0.2"
-      },
-      {
-        "name": "generator-jhipster-pace",
-        "version": "0.1.3"
+        "name": "generator-jhipster-docker",
+        "version": "2.2.0"
       },
       {
         "name": "generator-jhipster-darktheme",
