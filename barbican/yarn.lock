@@ -219,13 +219,13 @@
     fs-extra "^4.0.1"
     viz.js "^1.8.0"
 
-"@nebular/auth@2.0.0-rc.2":
-  version "2.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@nebular/auth/-/auth-2.0.0-rc.2.tgz#c97bc6a03484a1e292d044be30a0a4be41b047c4"
+"@nebular/auth@2.0.0-rc.3":
+  version "2.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@nebular/auth/-/auth-2.0.0-rc.3.tgz#1aa08bdf72d5315f190ec0ceb26379fcdb737d65"
 
-"@nebular/theme@2.0.0-rc.2":
-  version "2.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@nebular/theme/-/theme-2.0.0-rc.2.tgz#745d86c3cc61014841ea00f20fdc99c712d4c141"
+"@nebular/theme@2.0.0-rc.3":
+  version "2.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/@nebular/theme/-/theme-2.0.0-rc.3.tgz#ed200ecff7077d48bac04c903ccd1d1490bc9242"
 
 "@ng-bootstrap/ng-bootstrap@1.0.0-alpha.26":
   version "1.0.0-alpha.26"
@@ -973,12 +973,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bootstrap@4.0.0-alpha.6:
-  version "4.0.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0-alpha.6.tgz#4f54dd33ac0deac3b28407bc2df7ec608869c9c8"
-  dependencies:
-    jquery ">=1.9.1"
-    tether "^1.4.0"
+bootstrap@4.0.0-beta.2:
+  version "4.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0-beta.2.tgz#4d67d2aa2219f062cd90bc1247e6747b9e8fd051"
 
 brace-expansion@^1.0.0, brace-expansion@^1.1.7:
   version "1.1.8"
@@ -5798,7 +5795,7 @@ jhipster-core@1.4.0:
   dependencies:
     lodash "4.17.4"
 
-jquery@3.2.1, jquery@>=1.9.1:
+jquery@3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
@@ -9978,10 +9975,6 @@ tether@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/tether/-/tether-1.4.0.tgz#0f9fa171f75bf58485d8149e94799d7ae74d1c1a"
 
-tether@^1.4.0:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/tether/-/tether-1.4.3.tgz#fd547024c47b6e5c9b87e1880f997991a9a6ad54"
-
 text-encoding@0.6.4:
   version "0.6.4"
   resolved "https://registry.yarnpkg.com/text-encoding/-/text-encoding-0.6.4.tgz#e399a982257a276dae428bb92845cb71bdc26d19"
@@ -11770,11 +11763,7 @@ yosay@^1.0.0:
     taketalk "^1.0.0"
     wrap-ansi "^2.0.0"
 
-zone.js@0.8.16:
-  version "0.8.16"
-  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.16.tgz#ac31b6c418f88c0f918ad6acd8a402aca9313abb"
-
-zone.js@^0.8.14:
+zone.js@0.8.18, zone.js@^0.8.14:
   version "0.8.18"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.18.tgz#8cecb3977fcd1b3090562ff4570e2847e752b48d"
 
