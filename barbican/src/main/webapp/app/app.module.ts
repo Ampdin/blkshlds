@@ -4,6 +4,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Ng2Webstorage } from 'ng2-webstorage';
 
+import { APP_BASE_HREF } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
+import { CoreModule } from './@core/core.module';
+
 import { BarbicanSharedModule, UserRouteAccessService } from './shared';
 import { BarbicanAppRoutingModule} from './app-routing.module';
 import { BarbicanHomeModule } from './home/home.module';
@@ -28,6 +33,9 @@ import {
 @NgModule({
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
+        HttpModule,
+        CoreModule,
         BarbicanAppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
         BarbicanSharedModule,
@@ -47,6 +55,7 @@ import {
     ],
     providers: [
         ProfileService,
+        { provide: APP_BASE_HREF, useValue: '/' },
         customHttpProvider(),
         PaginationConfig,
         UserRouteAccessService
