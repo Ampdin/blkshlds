@@ -8,6 +8,8 @@ import { APP_BASE_HREF } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import { CoreModule } from './@core/core.module';
+import { ThemeModule } from './@theme/theme.module';
+
 
 import { BarbicanSharedModule, UserRouteAccessService } from './shared';
 import { BarbicanAppRoutingModule} from './app-routing.module';
