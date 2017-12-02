@@ -32,8 +32,8 @@ import {
     ThreeColumnsLayoutComponent,
     TwoColumnsLayoutComponent,
 } from './layouts';
-import { DEFAULT_THEME } from './styles/theme.default';
-import { COSMIC_THEME } from './styles/theme.cosmic';
+import { DEFAULT_THEME } from './../../content/scss/theme/theme.default';
+import { COSMIC_THEME } from './../../content/scss/theme/theme.cosmic';
 
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
 
