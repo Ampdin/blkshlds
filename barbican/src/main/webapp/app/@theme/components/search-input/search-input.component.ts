@@ -1,7 +1,7 @@
 import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 
 @Component({
-    selector: 'ngx-search-input',
+    selector: 'jhi-ngx-search-input',
     styleUrls: ['./search-input.component.scss'],
     template: `
     <i class="control-icon ion ion-ios-search"
@@ -13,7 +13,7 @@ import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular
            (input)="onInput($event)">
   `,
 })
-export class SearchInputComponent {
+export class JhiSearchInputComponent {
     @ViewChild('input') input: ElementRef;
 
     @Output() search: EventEmitter<string> = new EventEmitter<string>();

@@ -6,6 +6,7 @@ put Sass variables here:
 eg $input-color: red;
 ****************************/
 // Override Boostrap variables
+@import "./theme/styles";
 @import "bootstrap-variables";
 // Import Bootstrap source files from node_modules
 @import 'node_modules/bootstrap/scss/bootstrap';
@@ -24,4 +25,3 @@ $ionicons-font-path: '~ionicons/fonts';
 $nebular-icons-font-path: '~nebular-icons/fonts';
 @import "node_modules/nebular-icons/scss/nebular-icons.scss";
 @import "~socicon/css/socicon.css";
-@import "./theme  ../app/ngx-admin/@theme/styles/styles.scss";

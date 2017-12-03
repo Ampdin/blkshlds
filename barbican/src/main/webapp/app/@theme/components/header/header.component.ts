@@ -1,4 +1,3 @@
-
 import { Component, Input, OnInit } from '@angular/core';
 
 import { NbMenuService, NbSidebarService } from '@nebular/theme';
@@ -6,12 +5,11 @@ import { UserService } from '../../../@core/data/users.service';
 import { AnalyticsService } from '../../../@core/utils/analytics.service';
 
 @Component({
-    selector: 'ngx-header',
+    selector: 'jhi-ngx-header',
     styleUrls: ['./header.component.scss'],
     templateUrl: './header.component.html',
 })
-export class HeaderComponent implements OnInit {
-
+export class JhiHeaderComponent implements OnInit {
 
     @Input() position = 'normal';
 

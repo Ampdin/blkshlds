@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { StateService } from '../../../@core/data/state.service';
 
 @Component({
-  selector: 'ngx-theme-settings',
+  selector: 'jhi-ngx-theme-settings',
   styleUrls: ['./theme-settings.component.scss'],
   template: `
     <h6>LAYOUTS</h6>
@@ -28,7 +28,7 @@ import { StateService } from '../../../@core/data/state.service';
     </div>
   `,
 })
-export class ThemeSettingsComponent {
+export class JhiThemeSettingsComponent {
 
   layouts = [];
   sidebars = [];

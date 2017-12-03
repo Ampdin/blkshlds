@@ -1,10 +1,10 @@
 import { Component, OnDestroy, AfterViewInit, Output, EventEmitter, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'ngx-tiny-mce',
-  template: '',
+  selector: 'jhi-ngx-tiny-mce',
+  template: '<p></p>',
 })
-export class TinyMCEComponent implements OnDestroy, AfterViewInit {
+export class JhiTinyMCEComponent implements OnDestroy, AfterViewInit {
 
   @Output() editorKeyup = new EventEmitter<any>();
 
@@ -17,7 +17,7 @@ export class TinyMCEComponent implements OnDestroy, AfterViewInit {
       target: this.host.nativeElement,
       plugins: ['link', 'paste', 'table'],
       skin_url: 'assets/skins/lightgray',
-      setup: editor => {
+      setup: (editor) => {
         this.editor = editor;
         editor.on('keyup', () => {
           this.editorKeyup.emit(editor.getContent());

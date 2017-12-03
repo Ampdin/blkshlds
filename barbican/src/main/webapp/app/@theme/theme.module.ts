@@ -18,19 +18,19 @@ import {
 } from '@nebular/theme';
 
 import {
-    FooterComponent,
-    HeaderComponent,
-    SearchInputComponent,
-    ThemeSettingsComponent,
-    ThemeSwitcherComponent,
-    TinyMCEComponent,
+    JhiFooterComponent,
+    JhiHeaderComponent,
+    JhiSearchInputComponent,
+    JhiThemeSettingsComponent,
+    JhiThemeSwitcherComponent,
+    JhiTinyMCEComponent
 } from './components';
 import { CapitalizePipe, PluralPipe, RoundPipe, TimingPipe } from './pipes';
 import {
-    OneColumnLayoutComponent,
-    SampleLayoutComponent,
-    ThreeColumnsLayoutComponent,
-    TwoColumnsLayoutComponent,
+    JhiOneColumnLayoutComponent,
+    JhiSampleLayoutComponent,
+    JhiThreeColumnsLayoutComponent,
+    JhiTwoColumnsLayoutComponent,
 } from './layouts';
 import { DEFAULT_THEME } from './../../content/scss/theme/theme.default';
 import { COSMIC_THEME } from './../../content/scss/theme/theme.cosmic';
@@ -52,16 +52,16 @@ const NB_MODULES = [
 ];
 
 const COMPONENTS = [
-    ThemeSwitcherComponent,
-    HeaderComponent,
-    FooterComponent,
-    SearchInputComponent,
-    ThemeSettingsComponent,
-    TinyMCEComponent,
-    OneColumnLayoutComponent,
-    SampleLayoutComponent,
-    ThreeColumnsLayoutComponent,
-    TwoColumnsLayoutComponent,
+    JhiThemeSwitcherComponent,
+    JhiHeaderComponent,
+    JhiFooterComponent,
+    JhiSearchInputComponent,
+    JhiThemeSettingsComponent,
+    JhiTinyMCEComponent,
+    JhiOneColumnLayoutComponent,
+    JhiSampleLayoutComponent,
+    JhiThreeColumnsLayoutComponent,
+    JhiTwoColumnsLayoutComponent,
 ];
 
 const PIPES = [

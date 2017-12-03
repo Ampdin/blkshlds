@@ -4,7 +4,7 @@ import { NbJSThemeOptions } from '@nebular/theme/services/js-themes/theme.option
 import { AnalyticsService } from '../../../@core/utils/analytics.service';
 
 @Component({
-  selector: 'ngx-theme-switcher',
+  selector: 'jhi-ngx-theme-switcher',
   styleUrls: ['./theme-switcher.component.scss'],
   template: `
     <label class="theme-switch">
@@ -17,7 +17,7 @@ import { AnalyticsService } from '../../../@core/utils/analytics.service';
     </label>
   `,
 })
-export class ThemeSwitcherComponent implements OnInit {
+export class JhiThemeSwitcherComponent implements OnInit {
   theme: NbJSThemeOptions;
 
   constructor(private themeService: NbThemeService, private analyticsService: AnalyticsService) {

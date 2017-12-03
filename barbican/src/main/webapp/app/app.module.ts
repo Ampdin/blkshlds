@@ -11,7 +11,6 @@ import { CoreModule } from './@core/core.module';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
 import { BarbicanSharedModule, UserRouteAccessService } from './shared';
 import { BarbicanAppRoutingModule} from './app-routing.module';
 import { BarbicanHomeModule } from './home/home.module';

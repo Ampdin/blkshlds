@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 
 // TODO: move layouts into the framework
 @Component({
-  selector: 'ngx-two-columns-layout',
+  selector: 'jhi-ngx-two-columns-layout',
   styleUrls: ['./two-columns.layout.scss'],
   template: `
     <nb-layout>
       <nb-layout-header fixed>
-        <ngx-header></ngx-header>
+        <jhi-ngx-header></jhi-ngx-header>
       </nb-layout-header>
 
       <nb-sidebar class="menu-sidebar" tag="menu-sidebar" responsive >
@@ -27,11 +27,11 @@ import { Component } from '@angular/core';
       </nb-layout-column>
 
       <nb-layout-footer fixed>
-        <ngx-footer></ngx-footer>
+        <jhi-ngx-footer></jhi-ngx-footer>
       </nb-layout-footer>
 
     </nb-layout>
   `,
 })
-export class TwoColumnsLayoutComponent {
+export class JhiTwoColumnsLayoutComponent {
 }
