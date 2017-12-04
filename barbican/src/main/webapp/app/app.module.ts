@@ -10,6 +10,7 @@ import { HttpModule } from '@angular/http';
 import { CoreModule } from './@core/core.module';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { JhiAppComponent } from './app.component';
 
 import { BarbicanSharedModule, UserRouteAccessService } from './shared';
 import { BarbicanAppRoutingModule} from './app-routing.module';
@@ -21,6 +22,10 @@ import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
 // jhipster-needle-angular-add-module-import JHipster will add new module here
+
+import {
+    PagesModule
+} from './pages/pages.module';
 
 import {
     JhiMainComponent,
@@ -37,6 +42,7 @@ import {
         BrowserModule,
         BrowserAnimationsModule,
         HttpModule,
+        PagesModule,
         BarbicanAppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
         ThemeModule.forRoot(),
@@ -51,6 +57,7 @@ import {
     ],
     declarations: [
         JhiMainComponent,
+        JhiAppComponent,
         NavbarComponent,
         ErrorComponent,
         PageRibbonComponent,

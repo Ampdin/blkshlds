@@ -1,4 +1,4 @@
-<!--<nb-layout [center]="layout.id === 'center-column'" windowMode>-->
+
     <!--<jhi-page-ribbon></jhi-page-ribbon>-->
     <!--<div>-->
         <!--<router-outlet name="navbar"></router-outlet>-->
@@ -10,15 +10,17 @@
         <!--</div>-->
         <!--<jhi-footer></jhi-footer>-->
     <!--</div>-->
-<!--</nb-layout>-->
 
+
+
+<jhi-page-ribbon></jhi-page-ribbon>
 <nb-layout [center]="layout.id === 'center-column'" windowMode>
-    <jhi-page-ribbon></jhi-page-ribbon>
     <nb-layout-header fixed>
         <jhi-ngx-header [position]="sidebar.id === 'left' ? 'normal': 'inverse'"></jhi-ngx-header>
     </nb-layout-header>
 
     <nb-sidebar class="menu-sidebar"
+                state="collapsed"
                 tag="menu-sidebar"
                 responsive
                 [right]="sidebar.id === 'right'">

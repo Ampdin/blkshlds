@@ -3,7 +3,10 @@
      [class.right]="position === 'inverse'">
     <div class="logo-containter">
         <a (click)="toggleSidebar()" href="#" class="navigation"><i class="nb-menu"></i></a>
-        <div class="logo" (click)="goToHome()">ngx-<span>admin</span></div>
+        <a class="navbar-brand logo float-left" routerLink="/" (click)="collapseNavbar()">
+            <span class="logo-img"></span>
+            <span jhiTranslate="global.title" class="navbar-title">Barbican</span> <span class="navbar-version">{{version}}</span>
+        </a>
     </div>
     <jhi-ngx-theme-switcher></jhi-ngx-theme-switcher>
 </div>

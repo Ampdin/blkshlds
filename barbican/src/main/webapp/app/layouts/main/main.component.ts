@@ -17,7 +17,7 @@ import { JhiLanguageHelper } from '../../shared';
 @Component({
     selector: 'jhi-main',
     styleUrls: ['./main.component.scss'],
-    templateUrl: './main.component.html'
+    template: '<router-outlet></router-outlet>',
 })
 export class JhiMainComponent implements OnInit {
     layout: any = {};
@@ -33,9 +33,9 @@ export class JhiMainComponent implements OnInit {
             group: true,
         },
         {
-            title: 'Buttons',
+            title: 'Classes',
             icon: 'ion ion-android-radio-button-off',
-            link: '/pages/ui-features/buttons',
+            link: '/pages/ui-features/book',
         },
         {
             title: 'Grid',
