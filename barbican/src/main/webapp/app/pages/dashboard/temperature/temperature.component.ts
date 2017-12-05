@@ -2,11 +2,11 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-temperature',
+  selector: 'jhi-ngx-temperature',
   styleUrls: ['./temperature.component.scss'],
   templateUrl: './temperature.component.html',
 })
-export class TemperatureComponent implements OnDestroy {
+export class JhiTemperatureComponent implements OnDestroy {
 
   temperature = 24;
   temperatureOff = false;
@@ -20,7 +20,7 @@ export class TemperatureComponent implements OnDestroy {
   themeSubscription: any;
 
   constructor(private theme: NbThemeService) {
-    this.themeSubscription = this.theme.getJsTheme().subscribe(config => {
+    this.themeSubscription = this.theme.getJsTheme().subscribe((config) => {
       this.colors = config.variables;
     });
   }

@@ -2,17 +2,17 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-kitten',
+  selector: 'jhi-ngx-kitten',
   styleUrls: ['./kitten.component.scss'],
   templateUrl: './kitten.component.html',
 })
-export class KittenComponent implements OnDestroy {
+export class JhiKittenComponent implements OnDestroy {
 
   currentTheme: string;
   themeSubscription: any;
 
   constructor(private themeService: NbThemeService) {
-    this.themeSubscription = this.themeService.getJsTheme().subscribe(theme => {
+    this.themeSubscription = this.themeService.getJsTheme().subscribe((theme) => {
       this.currentTheme = theme.name;
     });
   }

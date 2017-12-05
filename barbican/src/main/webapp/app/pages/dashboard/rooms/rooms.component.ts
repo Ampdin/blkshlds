@@ -2,17 +2,17 @@ import { Component, HostBinding, OnDestroy } from '@angular/core';
 import { NbThemeService, NbMediaBreakpoint, NbMediaBreakpointsService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-rooms',
+  selector: 'jhi-ngx-rooms',
   styleUrls: ['./rooms.component.scss'],
   template: `
     <nb-card [size]="breakpoint.width >= breakpoints.sm ? 'large' : 'medium'">
       <i (click)="collapse()" class="nb-arrow-down collapse" [hidden]="isCollapsed()"></i>
-      <ngx-room-selector (select)="select($event)"></ngx-room-selector>
-      <ngx-player [collapsed]="isCollapsed() && breakpoint.width <= breakpoints.md"></ngx-player>
+      <jhi-ngx-room-selector (select)="select($event)"></jhi-ngx-room-selector>
+      <jhi-ngx-player [collapsed]="isCollapsed() && breakpoint.width <= breakpoints.md"></jhi-ngx-player>
     </nb-card>
   `,
 })
-export class RoomsComponent implements OnDestroy {
+export class JhiRoomsComponent implements OnDestroy {
 
   @HostBinding('class.expanded')
   private expanded: boolean;
