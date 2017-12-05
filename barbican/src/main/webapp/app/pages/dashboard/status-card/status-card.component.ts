@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'ngx-status-card',
+  selector: 'jhi-ngx-status-card',
   styleUrls: ['./status-card.component.scss'],
   template: `
     <nb-card (click)="on = !on" [ngClass]="{'off': !on}">
@@ -18,7 +18,7 @@ import { Component, Input } from '@angular/core';
     </nb-card>
   `,
 })
-export class StatusCardComponent {
+export class JhiStatusCardComponent {
 
   @Input() title: string;
   @Input() type: string;

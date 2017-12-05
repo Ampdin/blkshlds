@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MapsComponent } from './maps.component';
+import { JhiMapsComponent } from './maps.component';
 import { GmapsComponent } from './gmaps/gmaps.component';
 import { LeafletComponent } from './leaflet/leaflet.component';
-import { BubbleMapComponent } from './bubble/bubble-map.component';
+import { JhiBubbleMapComponent } from './bubble/bubble-map.component';
 
 const routes: Routes = [{
   path: '',
-  component: MapsComponent,
+  component: JhiMapsComponent,
   children: [{
     path: 'gmaps',
     component: GmapsComponent,
@@ -17,7 +17,7 @@ const routes: Routes = [{
     component: LeafletComponent,
   }, {
     path: 'bubble',
-    component: BubbleMapComponent,
+    component: JhiBubbleMapComponent,
   }],
 }];
 
@@ -28,8 +28,8 @@ const routes: Routes = [{
 export class MapsRoutingModule { }
 
 export const routedComponents = [
-  MapsComponent,
+  JhiMapsComponent,
   GmapsComponent,
   LeafletComponent,
-  BubbleMapComponent,
+  JhiBubbleMapComponent,
 ];

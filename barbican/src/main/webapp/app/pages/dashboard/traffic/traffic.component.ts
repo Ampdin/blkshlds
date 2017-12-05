@@ -2,7 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-traffic',
+  selector: 'jhi-ngx-traffic',
   styleUrls: ['./traffic.component.scss'],
   template: `
     <nb-card size="xsmall">
@@ -19,19 +19,19 @@ import { NbThemeService } from '@nebular/theme';
         </div>
       </nb-card-header>
       <nb-card-body class="p-0">
-        <ngx-traffic-chart></ngx-traffic-chart>
+        <jhi-ngx-traffic-chart></jhi-ngx-traffic-chart>
       </nb-card-body>
     </nb-card>
   `,
 })
-export class TrafficComponent implements OnDestroy {
+export class JhiTrafficComponent implements OnDestroy {
   type = 'month';
   types = ['week', 'month', 'year'];
   currentTheme: string;
   themeSubscription: any;
 
   constructor(private themeService: NbThemeService) {
-    this.themeSubscription = this.themeService.getJsTheme().subscribe(theme => {
+    this.themeSubscription = this.themeService.getJsTheme().subscribe((theme) => {
       this.currentTheme = theme.name;
     });
   }

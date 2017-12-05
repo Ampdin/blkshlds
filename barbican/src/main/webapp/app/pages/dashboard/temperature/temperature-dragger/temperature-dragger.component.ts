@@ -5,13 +5,39 @@ import {
 const VIEW_BOX_SIZE = 300;
 
 @Component({
-  selector: 'ngx-temperature-dragger',
+  selector: 'jhi-ngx-temperature-dragger',
   templateUrl: './temperature-dragger.component.html',
   styleUrls: ['./temperature-dragger.component.scss'],
 })
-export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
+export class JhiTemperatureDraggerComponent implements AfterViewInit, OnChanges {
 
-  @ViewChild('svgRoot') svgRoot: ElementRef;
+    off = false;
+    oldValue: number;
+
+    svgControlId = new Date().getTime();
+    scaleFactor = 1;
+    bottomAngleRad = 0;
+    radius = 100;
+    translateXValue = 0;
+    translateYValue = 0;
+    thickness = 6;
+    pinRadius = 10;
+    colors: any = [];
+
+    styles = {
+        viewBox: '0 0 300 300',
+        arcTranslateStr: 'translate(0, 0)',
+        clipPathStr: '',
+        gradArcs: [],
+        nonSelectedArc: {},
+        thumbPosition: { x: 0, y: 0 },
+        blurRadius: 15,
+    };
+
+    private isMouseDown = false;
+    private init = false;
+
+    @ViewChild('svgRoot') svgRoot: ElementRef;
 
   @Input() fillColors: string|string[] = '#2ec6ff';
   @Input() disableArcColor = '#999999';
@@ -48,32 +74,6 @@ export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
   onResize(event) {
     this.invalidate();
   }
-
-  off = false;
-  oldValue: number;
-
-  svgControlId = new Date().getTime();
-  scaleFactor = 1;
-  bottomAngleRad = 0;
-  radius = 100;
-  translateXValue = 0;
-  translateYValue = 0;
-  thickness = 6;
-  pinRadius = 10;
-  colors: any = [];
-
-  styles = {
-    viewBox: '0 0 300 300',
-    arcTranslateStr: 'translate(0, 0)',
-    clipPathStr: '',
-    gradArcs: [],
-    nonSelectedArc: {},
-    thumbPosition: { x: 0, y: 0 },
-    blurRadius: 15,
-  };
-
-  private isMouseDown = false;
-  private init = false;
 
   constructor() {
     this.oldValue = this.value;
@@ -115,7 +115,7 @@ export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
   }
 
   private invalidate(): void {
-    this.bottomAngleRad = TemperatureDraggerComponent.toRad(this.bottomAngle);
+    this.bottomAngleRad = JhiTemperatureDraggerComponent.toRad(this.bottomAngle);
     this.calculateVars();
 
     this.invalidateClipPathStr();
@@ -124,7 +124,7 @@ export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
   }
 
   private calculateVars() {
-    this.bottomAngleRad = TemperatureDraggerComponent.toRad(this.bottomAngle);
+    this.bottomAngleRad = JhiTemperatureDraggerComponent.toRad(this.bottomAngle);
     this.colors = (typeof this.fillColors === 'string') ? [this.fillColors] : this.fillColors;
 
     const halfAngle = this.bottomAngleRad / 2;
@@ -139,7 +139,6 @@ export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
 
     this.scaleFactor = svgBoundingRect.width / VIEW_BOX_SIZE || 1;
     this.styles.viewBox = `0 0 ${VIEW_BOX_SIZE} ${svgHeight}`;
-
 
     const circleFactor = this.bottomAngleRad <= Math.PI
       ? ( 2 / (1 + Math.cos(halfAngle)) )
@@ -255,6 +254,10 @@ export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
     return gradArray;
   }
 
+  // private static toRad(angle) {
+  //     return Math.PI * angle / 180;
+  // }
+
   private invalidateGradientArcs() {
     const radius = this.radius;
 
@@ -307,6 +310,10 @@ export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
     this.invalidateNonSelectedArc();
   }
 
+  private static toRad(angle) {
+        return Math.PI * angle / 180;
+  }
+
   private recalculateValue(event, allowJumping = false) {
     if (this.isMouseDown && !this.off) {
       const rect = this.svgRoot.nativeElement.getBoundingClientRect();
@@ -347,7 +354,4 @@ export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
     return Math.round(factor * (this.max - this.min) / this.step) * this.step + this.min;
   }
 
-  private static toRad(angle) {
-    return Math.PI * angle / 180;
-  }
 }

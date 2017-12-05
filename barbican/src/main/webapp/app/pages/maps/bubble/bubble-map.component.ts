@@ -2,7 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-bubble-map',
+  selector: 'jhi-ngx-bubble-map',
   styleUrls: ['./bubble-map.component.scss'],
   template: `
     <nb-card>
@@ -13,7 +13,7 @@ import { NbThemeService } from '@nebular/theme';
     </nb-card>
   `,
 })
-export class BubbleMapComponent implements OnDestroy {
+export class JhiBubbleMapComponent implements OnDestroy {
 
   latlong: any = {};
   mapData: any[];

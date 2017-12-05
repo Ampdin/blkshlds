@@ -2,14 +2,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { JhiPagesComponent } from './pages.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { JhiDashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [{
   path: '',
   component: JhiPagesComponent,
   children: [{
     path: 'dashboard',
-    component: DashboardComponent,
+    component: JhiDashboardComponent,
   }, {
     path: 'ui-features',
     loadChildren: './ui-features/ui-features.module#UiFeaturesModule',

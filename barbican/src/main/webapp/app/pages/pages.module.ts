@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { JhiPagesComponent } from './pages.component';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { PagesRoutingModule } from './pages-routing.module';
+import { JhiPagesRoutingModule } from './pages-routing.module';
 import { ThemeModule } from '../@theme/theme.module';
 
 const PAGES_COMPONENTS = [
@@ -11,7 +11,7 @@ const PAGES_COMPONENTS = [
 
 @NgModule({
   imports: [
-    PagesRoutingModule,
+    JhiPagesRoutingModule,
     ThemeModule,
     DashboardModule,
   ],

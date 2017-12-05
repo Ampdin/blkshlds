@@ -1,11 +1,11 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'ngx-room-selector',
+  selector: 'jhi-ngx-room-selector',
   templateUrl: './room-selector.component.html',
   styleUrls: ['./room-selector.component.scss'],
 })
-export class RoomSelectorComponent {
+export class JhiRoomSelectorComponent {
   @Output() select: EventEmitter<number> = new EventEmitter();
 
   selectedRoom: null;

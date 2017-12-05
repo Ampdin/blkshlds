@@ -2,11 +2,11 @@ import { Component, HostBinding, Input, OnDestroy } from '@angular/core';
 import { PlayerService, Track } from '../../../../@core/data/player.service';
 
 @Component({
-  selector: 'ngx-player',
+  selector: 'jhi-ngx-player',
   styleUrls: ['./player.component.scss'],
   templateUrl: './player.component.html',
 })
-export class PlayerComponent implements OnDestroy {
+export class JhiPlayerComponent implements OnDestroy {
   @Input()
   @HostBinding('class.collapsed')
   collapsed: boolean;

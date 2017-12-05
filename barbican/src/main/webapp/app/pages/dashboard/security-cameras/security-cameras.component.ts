@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-security-cameras',
+  selector: 'jhi-ngx-security-cameras',
   styleUrls: ['./security-cameras.component.scss'],
   templateUrl: './security-cameras.component.html',
 })
-export class SecurityCamerasComponent {
+export class JhiSecurityCamerasComponent {
 
   cameras: any[] = [{
     title: 'Camera #1',
-    source: 'assets/images/camera1.jpg',
+    source: 'a  assets/images/camera1.jpg',
   }, {
     title: 'Camera #2',
     source: 'assets/images/camera2.jpg',

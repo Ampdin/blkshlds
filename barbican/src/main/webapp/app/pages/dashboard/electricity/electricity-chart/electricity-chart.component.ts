@@ -4,13 +4,13 @@ import { NbThemeService } from '@nebular/theme';
 declare const echarts: any;
 
 @Component({
-  selector: 'ngx-electricity-chart',
+  selector: 'jhi-ngx-electricity-chart',
   styleUrls: ['./electricity-chart.component.scss'],
   template: `
     <div echarts [options]="option" class="echart"></div>
   `,
 })
-export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
+export class JhiElectricityChartComponent implements AfterViewInit, OnDestroy {
 
   option: any;
   data: Array<any>;
@@ -41,7 +41,7 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit(): void {
-    this.themeSubscription = this.theme.getJsTheme().delay(1).subscribe(config => {
+    this.themeSubscription = this.theme.getJsTheme().delay(1).subscribe((config) => {
       const eTheme: any = config.variables.electricity;
 
       this.option = {
@@ -76,7 +76,7 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
             type: 'category',
             boundaryGap: false,
             offset: 25,
-            data: this.data.map(i => i.label),
+            data: this.data.map((i) => i.label),
             axisTick: {
               show: false,
             },
@@ -155,7 +155,7 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
                   }]),
                 },
               },
-              data: this.data.map(i => i.value),
+              data: this.data.map((i) => i.value),
             },
 
             {
@@ -178,7 +178,7 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
                   opacity: 1,
                 },
               },
-              data: this.data.map(i => i.value),
+              data: this.data.map((i) => i.value),
             },
           ],
         };

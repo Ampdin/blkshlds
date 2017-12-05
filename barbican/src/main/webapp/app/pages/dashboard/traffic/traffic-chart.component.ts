@@ -6,13 +6,13 @@ declare const echarts: any;
 const points = [300, 520, 435, 530, 730, 620, 660, 860];
 
 @Component({
-  selector: 'ngx-traffic-chart',
+  selector: 'jhi-ngx-traffic-chart',
   styleUrls: ['./traffic.component.scss'],
   template: `
     <div echarts [options]="option" class="echart"></div>
   `,
 })
-export class TrafficChartComponent implements AfterViewInit, OnDestroy {
+export class JhiTrafficChartComponent implements AfterViewInit, OnDestroy {
 
   type = 'month';
   types = ['week', 'month', 'year'];
@@ -23,7 +23,7 @@ export class TrafficChartComponent implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
-    this.themeSubscription = this.theme.getJsTheme().delay(1).subscribe(config => {
+    this.themeSubscription = this.theme.getJsTheme().delay(1).subscribe((config) => {
 
       const trafficTheme: any = config.variables.traffic;
 
@@ -98,7 +98,7 @@ export class TrafficChartComponent implements AfterViewInit, OnDestroy {
                 color: trafficTheme.shadowLineDarkBg,
               },
             },
-            data: points.map(p => p - 15),
+            data: points.map((p) => p - 15),
           },
           {
             type: 'line',
