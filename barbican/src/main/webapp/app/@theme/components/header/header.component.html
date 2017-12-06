@@ -22,6 +22,55 @@
     </nb-action>
     <nb-action class="control-item" disabled icon="nb-notifications"></nb-action>
     <nb-action class="control-item" icon="nb-email"></nb-action>
+
+    <nb-action>
+    <li ngbDropdown class="nav-item dropdown pointer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:void(0);" id="account-menu">
+                  <span *ngIf="!getImageUrl()">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span jhiTranslate="global.menu.account.main">
+                      Account
+                    </span>
+                  </span>
+            <span *ngIf="getImageUrl()">
+                      <img [src]="getImageUrl()" class="profile-image img-circle" alt="Avatar">
+                  </span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right ml-auto" ngbDropdownMenu>
+            <li *ngSwitchCase="true">
+                <a class="dropdown-item" routerLink="settings" routerLinkActive="active" (click)="collapseNavbar()">
+                    <i class="fa fa-fw fa-wrench" aria-hidden="true"></i>
+                    <span jhiTranslate="global.menu.account.settings">Settings</span>
+                </a>
+            </li>
+            <li *ngSwitchCase="true">
+                <a class="dropdown-item" routerLink="password" routerLinkActive="active" (click)="collapseNavbar()">
+                    <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>
+                    <span jhiTranslate="global.menu.account.password">Password</span>
+                </a>
+            </li>
+            <li *ngSwitchCase="true">
+                <a class="dropdown-item" (click)="logout()" id="logout">
+                    <i class="fa fa-fw fa-sign-out" aria-hidden="true"></i>
+                    <span jhiTranslate="global.menu.account.logout">Sign out</span>
+                </a>
+            </li>
+            <li *ngSwitchCase="false">
+                <a class="dropdown-item" (click)="login()" id="login">
+                    <i class="fa fa-fw fa-sign-in" aria-hidden="true"></i>
+                    <span jhiTranslate="global.menu.account.login">Sign in</span>
+                </a>
+            </li>
+            <li *ngSwitchCase="false">
+                <a class="dropdown-item" routerLink="register" routerLinkActive="active" (click)="collapseNavbar()">
+                    <i class="fa fa-fw fa-user-plus" aria-hidden="true"></i>
+                    <span jhiTranslate="global.menu.account.register">Register</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    </nb-action>
+
     <nb-action class="control-item">
         <nb-search type="rotate-layout" (click)="startSearch()"></nb-search>
     </nb-action>

@@ -9,7 +9,7 @@ export class JhiSecurityCamerasComponent {
 
   cameras: any[] = [{
     title: 'Camera #1',
-    source: 'a  assets/images/camera1.jpg',
+    source: 'ngx-admin/assets/images/camera1.jpg',
   }, {
     title: 'Camera #2',
     source: 'assets/images/camera2.jpg',
