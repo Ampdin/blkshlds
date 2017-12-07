@@ -29,7 +29,7 @@ export class JhiHeaderComponent implements OnInit {
 
     user: any;
 
-    userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
+    userMenu = [{ title: 'Profilez' }, { title: 'Log out' }];
 
     constructor(
         private sidebarService: NbSidebarService,
