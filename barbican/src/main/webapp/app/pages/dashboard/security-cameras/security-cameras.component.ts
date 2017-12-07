@@ -9,7 +9,7 @@ export class JhiSecurityCamerasComponent {
 
   cameras: any[] = [{
     title: 'Camera #1',
-    source: 'ngx-admin/assets/images/camera1.jpg',
+      source: 'assets/images/camera1.jpg',
   }, {
     title: 'Camera #2',
     source: 'assets/images/camera2.jpg',
@@ -24,7 +24,7 @@ export class JhiSecurityCamerasComponent {
   selectedCamera: any = this.cameras[0];
 
   userMenu = [{
-    title: 'Profile',
+    title: 'Profile X',
   }, {
     title: 'Log out',
   }];
