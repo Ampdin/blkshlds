@@ -23,9 +23,8 @@ import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 
-import {
-    PagesModule
-} from './pages/pages.module';
+import { PagesModule } from './pages/pages.module';
+import { JhiPagesComponent } from './pages/pages.component';
 
 import {
     JhiMainComponent,
@@ -59,6 +58,7 @@ import {
         JhiMainComponent,
         JhiAppComponent,
         NavbarComponent,
+        JhiPagesComponent,
         ErrorComponent,
         PageRibbonComponent,
         ActiveMenuDirective,
