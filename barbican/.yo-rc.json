@@ -4,14 +4,14 @@
       "packageName": "com.spirovanni.blackshields",
       "nativeLanguage": "en"
     },
-    "jhipsterVersion": "4.11.0",
+    "jhipsterVersion": "4.13.3",
     "baseName": "barbican",
     "packageName": "com.spirovanni.blackshields",
     "packageFolder": "com/spirovanni/blackshields",
     "serverPort": "8080",
     "authenticationType": "jwt",
-    "hibernateCache": "hazelcast",
-    "clusteredHttpSession": "hazelcast",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "mysql",
@@ -22,7 +22,7 @@
     "buildTool": "maven",
     "enableSocialSignIn": false,
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "87f925352d3af71fdb137da770a82d6185a6b012",
+    "jwtSecretKey": "576af9d937a330d9e4096278c1e81a487a2e0d59",
     "clientFramework": "angularX",
     "useSass": true,
     "clientPackageManager": "yarn",
@@ -35,28 +35,16 @@
     "jhiPrefix": "jhi",
     "otherModules": [
       {
-        "name": "generator-jhipster-module",
-        "version": "2.2.0"
-      },
-      {
         "name": "generator-jhipster-primeng",
-        "version": "2.0.0"
+        "version": "2.0.34"
       },
       {
-        "name": "generator-jhipster-docker",
-        "version": "2.2.0"
+        "name": "generator-jhipster-leaflet",
+        "version": "1.0.0"
       },
       {
-        "name": "generator-jhipster-darktheme",
-        "version": "0.0.7"
-      },
-      {
-        "name": "generator-jhipster-google-maps",
-        "version": "0.0.1"
-      },
-      {
-        "name": "generator-jhipster-google-analytics",
-        "version": "0.0.1"
+        "name": "generator-jhipster-primeng-charts",
+        "version": "0.0.3"
       }
     ],
     "enableTranslation": true,

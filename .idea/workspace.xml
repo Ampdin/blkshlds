@@ -2,9 +2,414 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dbacaf9-94ef-451c-b920-5f0fe6c60890" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/barbican/package.json" afterPath="$PROJECT_DIR$/barbican/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/app-routing.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.module.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/.idea/blkshlds.iml" afterPath="$PROJECT_DIR$/.idea/blkshlds.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/barbican/.yo-rc.json" afterPath="$PROJECT_DIR$/barbican/.yo-rc.json" />
+      <change beforePath="$PROJECT_DIR$/barbican/README.md" afterPath="$PROJECT_DIR$/barbican/README.md" />
+      <change beforePath="$PROJECT_DIR$/barbican/package.json" afterPath="$PROJECT_DIR$/barbican/package.json" />
+      <change beforePath="$PROJECT_DIR$/barbican/pom.xml" afterPath="$PROJECT_DIR$/barbican/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/docker/Dockerfile" afterPath="$PROJECT_DIR$/barbican/src/main/docker/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/docker/elasticsearch.yml" afterPath="$PROJECT_DIR$/barbican/src/main/docker/elasticsearch.yml" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/docker/jhipster-registry.yml" afterPath="$PROJECT_DIR$/barbican/src/main/docker/jhipster-registry.yml" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/BarbicanApp.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/BarbicanApp.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/CacheConfiguration.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/CacheConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/DatabaseConfiguration.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/DatabaseConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/LoggingConfiguration.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/LoggingConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/SecurityConfiguration.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/SecurityConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/WebConfigurer.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/config/WebConfigurer.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/domain/PersistentAuditEvent.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/domain/PersistentAuditEvent.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/domain/User.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/domain/User.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/repository/UserRepository.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/repository/UserRepository.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/security/DomainUserDetailsService.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/security/DomainUserDetailsService.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/service/UserService.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/service/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/web/rest/errors/ErrorConstants.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/web/rest/errors/ErrorConstants.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/web/rest/vm/LoginVM.java" afterPath="$PROJECT_DIR$/barbican/src/main/java/com/spirovanni/blackshields/web/rest/vm/LoginVM.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/resources/logback-spring.xml" afterPath="$PROJECT_DIR$/barbican/src/main/resources/logback-spring.xml" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/core.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/data/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/data/data.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/data/electricity.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/data/player.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/data/smart-table.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/data/state.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/data/users.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/module-import-guard.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/utils/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@core/utils/analytics.service.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/footer/footer.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/footer/footer.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/header/header.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/header/header.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/header/header.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/index.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/search-input/search-input.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/search-input/search-input.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/theme-settings/theme-settings.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/theme-settings/theme-settings.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/theme-switcher/theme-switcher.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/theme-switcher/theme-switcher.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/components/tiny-mce/tiny-mce.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/index.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/one-column/one-column.layout.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/one-column/one-column.layout.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/sample/sample.layout.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/sample/sample.layout.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/three-columns/three-columns.layout.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/three-columns/three-columns.layout.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/two-columns/two-columns.layout.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/layouts/two-columns/two-columns.layout.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/pipes/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/pipes/capitalize.pipe.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/pipes/index.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/pipes/plural.pipe.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/pipes/round.pipe.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/pipes/timing.pipe.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/@theme/theme.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/activate/activate.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/activate/activate.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/password-reset/finish/password-reset-finish.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/password-reset/finish/password-reset-finish.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/password-reset/init/password-reset-init.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/password-reset/init/password-reset-init.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/password/password.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/password/password.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/register/register.component.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/register/register.component.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/register/register.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/account/register/register.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/audits/audits.component.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/audits/audits.component.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/audits/audits.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/audits/audits.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/configuration/configuration.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/configuration/configuration.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/gateway/gateway-routes.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/gateway/gateway-routes.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/gateway/gateway.route.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/gateway/gateway.route.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/health/health.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/health/health.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/logs/logs.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/logs/logs.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/metrics/metrics.component.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/metrics/metrics.component.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/metrics/metrics.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/metrics/metrics.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management-detail.component.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management-detail.component.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management-detail.component.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management-detail.component.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management-dialog.component.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management-dialog.component.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management.component.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management.component.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management.component.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-management.component.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-modal.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/admin/user-management/user-modal.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/app-routing.module.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.constants.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.constants.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.main-aot.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.module.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.route.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/app.route.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/blocks/interceptor/auth.interceptor.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/blocks/interceptor/auth.interceptor.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/blocks/interceptor/http.provider.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/blocks/interceptor/http.provider.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/layouts/main/main.component.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/layouts/main/main.component.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/layouts/main/main.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/layouts/main/main.component.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/layouts/main/main.component.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/layouts/navbar/navbar.component.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/layouts/navbar/navbar.component.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/alan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/camera1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/camera2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/camera3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/camera4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/cover1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/cover2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/cover3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/eva.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/jack.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/kate.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/kitten-cosmic.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/kitten-default.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/lee.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/nick.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/square_pattern.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/square_pattern_cosmic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/team.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/images/xavier.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/content.inline.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/content.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/fonts/tinymce-small.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/fonts/tinymce-small.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/fonts/tinymce-small.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/fonts/tinymce-small.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/fonts/tinymce.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/fonts/tinymce.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/fonts/tinymce.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/fonts/tinymce.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/img/anchor.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/img/loader.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/img/object.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/img/trans.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/skin.ie7.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/skins/lightgray/skin.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/vendors/echarts.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/ngx-admin/assets/vendors/echarts.world.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs-bar-horizontal.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs-bar.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs-line.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs-multiple-xaxis.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs-pie.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs-radar.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/chartjs/chartjs.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/charts-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/charts.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/charts.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3-advanced-pie.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3-area-stack.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3-bar.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3-line.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3-pie.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3-polar.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/d3/d3.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts-area-stack.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts-bar-animation.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts-bar.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts-line.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts-multiple-xaxis.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts-pie.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts-radar.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/charts/echarts/echarts.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/components/components-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/components/components.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/components/components.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/components/notifications/notifications.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/components/notifications/notifications.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/components/notifications/notifications.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/components/tree/tree.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/components/tree/tree.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/contacts/contacts.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/contacts/contacts.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/contacts/contacts.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/dashboard.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/dashboard.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/dashboard.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/dashboard.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/electricity/electricity-chart/electricity-chart.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/electricity/electricity-chart/electricity-chart.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/electricity/electricity.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/electricity/electricity.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/electricity/electricity.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/kitten/kitten.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/kitten/kitten.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/kitten/kitten.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/rooms/player/player.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/rooms/player/player.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/rooms/player/player.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/rooms/room-selector/room-selector.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/rooms/room-selector/room-selector.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/rooms/room-selector/room-selector.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/rooms/rooms.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/rooms/rooms.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/security-cameras/security-cameras.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/security-cameras/security-cameras.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/security-cameras/security-cameras.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/solar/solar.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/solar/solar.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/status-card/status-card.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/status-card/status-card.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/team/team.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/team/team.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/team/team.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/temperature/temperature-dragger/temperature-dragger.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/temperature/temperature-dragger/temperature-dragger.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/temperature/temperature-dragger/temperature-dragger.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/temperature/temperature.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/temperature/temperature.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/temperature/temperature.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/traffic/traffic-chart.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/traffic/traffic.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/traffic/traffic.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/weather/weather.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/weather/weather.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/dashboard/weather/weather.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/editors/ckeditor/ckeditor.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/editors/ckeditor/ckeditor.loader.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/editors/editors-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/editors/editors.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/editors/editors.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/editors/tiny-mce/tiny-mce.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/form-inputs/form-inputs.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/form-inputs/form-inputs.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/form-inputs/form-inputs.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/form-layouts/form-layouts.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/form-layouts/form-layouts.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/form-layouts/form-layouts.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/forms-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/forms.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/forms/forms.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/bubble/bubble-map.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/bubble/bubble-map.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/gmaps/gmaps.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/gmaps/gmaps.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/leaflet/leaflet.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/leaflet/leaflet.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/maps-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/maps.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/maps/maps.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/pages-menu.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/pages-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/pages.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/pages.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/tables/smart-table/smart-table.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/tables/smart-table/smart-table.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/tables/tables-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/tables/tables.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/tables/tables.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/action-groups/action-groups.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/action-groups/action-groups.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/action-groups/action-groups.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/block-level-buttons/block-level-buttons.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/block-level-buttons/block-level-buttons.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/button-groups/button-groups.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/button-groups/button-groups.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/button-groups/button-groups.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/buttons.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/buttons.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/buttons.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/buttons.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/default-buttons/default-buttons.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/default-buttons/default-buttons.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/default-buttons/default-buttons.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/dropdown-buttons/dropdown-button.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/dropdown-buttons/dropdown-button.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/dropdown-buttons/dropdown-button.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/hero-buttons/hero-buttons.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/hero-buttons/hero-buttons.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/hero-buttons/hero-buttons.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/icon-buttons/icon-buttons.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/icon-buttons/icon-buttons.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/icon-buttons/icon-buttons.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/labeled-actions-group/labeled-actions-group.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/labeled-actions-group/labeled-actions-group.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/labeled-actions-group/labeled-actions-group.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/shape-buttons/shape-buttons.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/shape-buttons/shape-buttons.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/shape-buttons/shape-buttons.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/size-buttons/size-buttons.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/size-buttons/size-buttons.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/buttons/size-buttons/size-buttons.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/grid/grid.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/grid/grid.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/grid/grid.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/icons/icons.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/icons/icons.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/icons/icons.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/modals/modal/modal.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/modals/modal/modal.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/modals/modals.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/modals/modals.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/modals/modals.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/search-fields/search-fields.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/search-fields/search-fields.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/tabs/tabs.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/tabs/tabs.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/tabs/tabs.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/typography/typography.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/typography/typography.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/typography/typography.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/ui-features-routing.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/ui-features.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/pages/ui-features/ui-features.module.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/polyfills.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/polyfills.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/alert/alert-error.component.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/alert/alert-error.component.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/auth/account.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/auth/account.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/auth/auth-jwt.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/auth/auth-jwt.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/auth/state-storage.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/auth/state-storage.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/auth/user-route-access-service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/auth/user-route-access-service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/login/login-modal.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/login/login-modal.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/model/request-util.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/model/request-util.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/shared-common.module.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/shared-common.module.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/shared-libs.module.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/shared-libs.module.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/user/user.service.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/shared/user/user.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/typings.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/app/vendor.ts" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/app/vendor.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/.gitkeep" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/alan.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/camera1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/camera2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/camera3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/camera4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/cover1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/cover2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/cover3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/eva.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/jack.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/kate.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/kitten-cosmic.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/kitten-default.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/lee.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/nick.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/square_pattern.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/square_pattern_cosmic.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/team.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/images/xavier.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/content.inline.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/content.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/fonts/tinymce-small.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/fonts/tinymce-small.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/fonts/tinymce-small.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/fonts/tinymce-small.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/fonts/tinymce.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/fonts/tinymce.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/fonts/tinymce.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/fonts/tinymce.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/img/anchor.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/img/loader.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/img/object.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/img/trans.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/skin.ie7.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/skins/lightgray/skin.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/vendors/echarts.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/assets/vendors/echarts.world.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/_bootstrap-variables.scss" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/_bootstrap-variables.scss" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/global.scss" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/global.scss" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/theme/pace.theme.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/theme/styles.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/theme/theme.cosmic.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/theme/theme.default.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/theme/themes.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/vendor.scss" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/content/scss/vendor.scss" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/i18n/en/global.json" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/i18n/en/global.json" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/i18n/en/register.json" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/i18n/en/register.json" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/barbican/src/main/webapp/index.html" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/main/webapp/sw.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/java/com/spirovanni/blackshields/config/WebConfigurerTest.java" afterPath="$PROJECT_DIR$/barbican/src/test/java/com/spirovanni/blackshields/config/WebConfigurerTest.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/java/com/spirovanni/blackshields/web/rest/AccountResourceIntTest.java" afterPath="$PROJECT_DIR$/barbican/src/test/java/com/spirovanni/blackshields/web/rest/AccountResourceIntTest.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/java/com/spirovanni/blackshields/web/rest/TestUtil.java" afterPath="$PROJECT_DIR$/barbican/src/test/java/com/spirovanni/blackshields/web/rest/TestUtil.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/java/com/spirovanni/blackshields/web/rest/UserResourceIntTest.java" afterPath="$PROJECT_DIR$/barbican/src/test/java/com/spirovanni/blackshields/web/rest/UserResourceIntTest.java" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/e2e/admin/administration.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/e2e/admin/administration.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/activate/activate.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/activate/activate.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/password-reset/finish/password-reset-finish.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/password-reset/finish/password-reset-finish.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/password-reset/init/password-reset-init.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/password-reset/init/password-reset-init.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/password/password-strength-bar.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/password/password-strength-bar.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/password/password.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/password/password.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/register/register.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/register/register.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/settings/settings.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/account/settings/settings.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/admin/audits/audits.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/admin/audits/audits.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/admin/health/health.component.spec.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/app/admin/health/health.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/helpers/mock-language.service.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/helpers/mock-language.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/helpers/mock-principal.service.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/helpers/mock-principal.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/helpers/mock-route.service.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/helpers/mock-route.service.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/javascript/spec/test.module.ts" afterPath="$PROJECT_DIR$/barbican/src/test/javascript/spec/test.module.ts" />
+      <change beforePath="$PROJECT_DIR$/barbican/src/test/resources/config/application.yml" afterPath="$PROJECT_DIR$/barbican/src/test/resources/config/application.yml" />
+      <change beforePath="$PROJECT_DIR$/barbican/tsconfig-aot.json" afterPath="$PROJECT_DIR$/barbican/tsconfig-aot.json" />
+      <change beforePath="$PROJECT_DIR$/barbican/tsconfig.json" afterPath="$PROJECT_DIR$/barbican/tsconfig.json" />
+      <change beforePath="$PROJECT_DIR$/barbican/tslint.json" afterPath="$PROJECT_DIR$/barbican/tslint.json" />
+      <change beforePath="$PROJECT_DIR$/barbican/webpack/webpack.common.js" afterPath="$PROJECT_DIR$/barbican/webpack/webpack.common.js" />
+      <change beforePath="$PROJECT_DIR$/barbican/webpack/webpack.prod.js" afterPath="$PROJECT_DIR$/barbican/webpack/webpack.prod.js" />
+      <change beforePath="$PROJECT_DIR$/barbican/yarn.lock" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/registry/.travis.yml" afterPath="$PROJECT_DIR$/registry/.travis.yml" />
+      <change beforePath="$PROJECT_DIR$/registry/Dockerfile" afterPath="$PROJECT_DIR$/registry/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/registry/LICENSE.txt" afterPath="$PROJECT_DIR$/registry/LICENSE.txt" />
+      <change beforePath="$PROJECT_DIR$/registry/NOTICE" afterPath="$PROJECT_DIR$/registry/NOTICE" />
+      <change beforePath="$PROJECT_DIR$/registry/README.md" afterPath="$PROJECT_DIR$/registry/README.md" />
+      <change beforePath="$PROJECT_DIR$/registry/package.json" afterPath="$PROJECT_DIR$/registry/package.json" />
+      <change beforePath="$PROJECT_DIR$/registry/pom.xml" afterPath="$PROJECT_DIR$/registry/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/docker/Dockerfile" afterPath="$PROJECT_DIR$/registry/src/main/docker/Dockerfile" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/JHipsterRegistryApp.java" afterPath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/JHipsterRegistryApp.java" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/config/OAuth2SsoConfiguration.java" afterPath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/config/OAuth2SsoConfiguration.java" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/service/ZuulUpdaterService.java" afterPath="$PROJECT_DIR$/registry/src/main/java/io/github/jhipster/registry/service/ZuulUpdaterService.java" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/resources/banner.txt" afterPath="$PROJECT_DIR$/registry/src/main/resources/banner.txt" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/resources/config/application-oauth2.yml" afterPath="$PROJECT_DIR$/registry/src/main/resources/config/application-oauth2.yml" />
+      <change beforePath="$PROJECT_DIR$/registry/src/main/webapp/app/layouts/footer/footer.component.html" afterPath="$PROJECT_DIR$/registry/src/main/webapp/app/layouts/footer/footer.component.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,12 +419,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/barbican/package.json">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/barbican/src/main/resources/config/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="147">
+              <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -39,6 +444,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/barbican/package.json" />
+        <option value="$PROJECT_DIR$/barbican/src/main/resources/config/application-dev.yml" />
       </list>
     </option>
   </component>
@@ -50,15 +456,13 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/armory/node_modules" />
-    <handled-path value="$PROJECT_DIR$/barbican/node_modules" />
     <handled-path value="$PROJECT_DIR$/registry/node_modules" />
-    <handled-path value="$PROJECT_DIR$/registry/target/aot/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
+    <option name="x" value="59" />
     <option name="y" value="23" />
-    <option name="width" value="1219" />
-    <option name="height" value="746" />
+    <option name="width" value="1175" />
+    <option name="height" value="759" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -75,6 +479,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -82,28 +487,25 @@
               <item name="blkshlds" type="b2602c69:ProjectViewProjectNode" />
               <item name="blkshlds" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="blkshlds" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blkshlds" type="462c0819:PsiDirectoryNode" />
-              <item name="barbican" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/barbican/src/main/resources/config/application-dev.yml" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -158,12 +560,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -198,9 +594,18 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -210,127 +615,104 @@
       <option name="presentableId" value="Default" />
       <updated>1512890668354</updated>
       <workItem from="1512890675189" duration="518000" />
+      <workItem from="1516455197088" duration="1603000" />
+      <workItem from="1516589184101" duration="9203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="518000" />
+    <option name="totallyTimeSpent" value="11324000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="23" width="1219" height="746" extended-state="0" />
-    <editor active="true" />
+    <frame x="59" y="23" width="1175" height="759" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49141964" sideWeight="0.50323623" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49141964" sideWeight="0.49676377" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2683142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/Reflect.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/Reflect.d.ts" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/Reflect.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/karma/config.tpl.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/Reflect.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/Reflect.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/Reflect.js.map" />
         <option value="$PROJECT_DIR$/registry/node_modules/karma/config.tpl.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/ng/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/ng/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/ng/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/enum/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/enum/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/enum/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/pipe/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/pipe/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/pipe/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/class/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/class/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/class/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/guard/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/guard/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/guard/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/module/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/module/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/module/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/service/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/service/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/service/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/component/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/component/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/component/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/directive/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/directive/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/directive/index.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/interface/index.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/interface/index.d.ts" />
-        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/interface/index.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-metadata.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-decorate.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
-        <option value="$PROJECT_DIR$/barbican/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-metadata.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-decorate.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
-        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/Reflect.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/Reflect.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/Reflect.d.ts" />
         <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-decorate.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-metadata.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/component/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/component/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/component/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/service/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/service/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/service/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/guard/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/guard/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/guard/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/module/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/module/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/module/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/ng/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/ng/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/ng/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/pipe/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/pipe/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/pipe/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/interface/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/interface/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/interface/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/class/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/class/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/class/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/enum/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/enum/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/enum/index.d.ts" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/directive/index.js" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/directive/index.js.map" />
+        <option value="$PROJECT_DIR$/registry/node_modules/@angular/cli/blueprints/directive/index.d.ts" />
       </list>
     </option>
   </component>
@@ -344,8 +726,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/barbican/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbican/src/main/resources/config/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbican/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbican/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
           <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/barbican/src/main/resources/config/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -353,6 +767,30 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -367,6 +805,18 @@
       <state key="JdkListConfigurable.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>blkshlds</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

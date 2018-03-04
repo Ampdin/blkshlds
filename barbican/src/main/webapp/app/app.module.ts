@@ -2,15 +2,7 @@ import './vendor.ts';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Ng2Webstorage } from 'ng2-webstorage';
-
-import { APP_BASE_HREF } from '@angular/common';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpModule } from '@angular/http';
-import { CoreModule } from './@core/core.module';
-import { ThemeModule } from './@theme/theme.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { JhiAppComponent } from './app.component';
+import { Ng2Webstorage } from 'ngx-webstorage';
 
 import { BarbicanSharedModule, UserRouteAccessService } from './shared';
 import { BarbicanAppRoutingModule} from './app-routing.module';
@@ -22,9 +14,6 @@ import { customHttpProvider } from './blocks/interceptor/http.provider';
 import { PaginationConfig } from './blocks/config/uib-pagination.config';
 
 // jhipster-needle-angular-add-module-import JHipster will add new module here
-
-import { PagesModule } from './pages/pages.module';
-import { JhiPagesComponent } from './pages/pages.component';
 
 import {
     JhiMainComponent,
@@ -39,14 +28,8 @@ import {
 @NgModule({
     imports: [
         BrowserModule,
-        BrowserAnimationsModule,
-        HttpModule,
-        PagesModule,
         BarbicanAppRoutingModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
-        ThemeModule.forRoot(),
-        CoreModule.forRoot(),
-        NgbModule.forRoot(),
         BarbicanSharedModule,
         BarbicanHomeModule,
         BarbicanAdminModule,
@@ -56,9 +39,7 @@ import {
     ],
     declarations: [
         JhiMainComponent,
-        JhiAppComponent,
         NavbarComponent,
-        JhiPagesComponent,
         ErrorComponent,
         PageRibbonComponent,
         ActiveMenuDirective,
@@ -66,7 +47,6 @@ import {
     ],
     providers: [
         ProfileService,
-        { provide: APP_BASE_HREF, useValue: '/' },
         customHttpProvider(),
         PaginationConfig,
         UserRouteAccessService
